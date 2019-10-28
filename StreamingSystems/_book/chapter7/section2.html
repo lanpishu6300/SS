@@ -1,0 +1,1391 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Implicit State · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="section3.html" />
+    
+    
+    <link rel="prev" href="section1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../INTRODUCTION.html">
+            
+                <a href="../INTRODUCTION.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    Chapter1 Streaming 101
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter1/section1.1.html">
+            
+                <a href="../chapter1/section1.1.html">
+            
+                    
+                    Section1.1 Terminology: What Is Streaming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter1/section1.2.html">
+            
+                <a href="../chapter1/section1.2.html">
+            
+                    
+                    Section1.2 Data Processing Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter1/summary.html">
+            
+                <a href="../chapter1/summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    Chapter2 The What, Where,When, and How of Data Processing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter1/section1.1.html">
+            
+                <a href="../chapter1/section1.1.html">
+            
+                    
+                    Section2.1 Roadmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter2/section1.2.html">
+            
+                <a href="../chapter2/section1.2.html">
+            
+                    
+                    Section2.2 Batch Foundations: What and Where
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter2/summary0.html">
+            
+                <a href="../chapter2/summary0.html">
+            
+                    
+                    Going Streaming: When and How
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter2/summary.html">
+            
+                <a href="../chapter2/summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter3/">
+            
+                <a href="../chapter3/">
+            
+                    
+                    Chapter3  Watermarks
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter3/section1.html">
+            
+                <a href="../chapter3/section1.html">
+            
+                    
+                    Section3.1 Definition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter3/section2.html">
+            
+                <a href="../chapter3/section2.html">
+            
+                    
+                    Section3.2 Source Watermark Creation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter3/section3.html">
+            
+                <a href="../chapter3/section3.html">
+            
+                    
+                    Watermark Propagation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter3/section4.html">
+            
+                <a href="../chapter3/section4.html">
+            
+                    
+                    Percentile Watermarks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../chapter3/section5.html">
+            
+                <a href="../chapter3/section5.html">
+            
+                    
+                    Processing-Time Watermarks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../chapter3/section6.html">
+            
+                <a href="../chapter3/section6.html">
+            
+                    
+                    Case Studies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../chapter3/section7.html">
+            
+                <a href="../chapter3/section7.html">
+            
+                    
+                    Watermark Propagation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../chapter3/summary.md">
+            
+                <span>
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter4/">
+            
+                <a href="../chapter4/">
+            
+                    
+                    Chapter 4. Advanced Windowing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter4/section1.html">
+            
+                <a href="../chapter4/section1.html">
+            
+                    
+                    When/Where: Processing-Time Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter4/section2.html">
+            
+                <a href="../chapter4/section2.html">
+            
+                    
+                    Where: Session Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter4/section3.html">
+            
+                <a href="../chapter4/section3.html">
+            
+                    
+                    Where: Custom Windowing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../chapter4/summary.html">
+            
+                <a href="../chapter4/summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    Chapter5 Exactly-Once and Side Effects
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter5/section1.html">
+            
+                <a href="../chapter5/section1.html">
+            
+                    
+                    Why Exactly Once Matters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../chapter5/section2.html">
+            
+                <a href="../chapter5/section2.html">
+            
+                    
+                    Accuracy Versus Completeness
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../chapter5/section3.html">
+            
+                <a href="../chapter5/section3.html">
+            
+                    
+                    Ensuring Exactly Once in Shuffle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../chapter5/section4.html">
+            
+                <a href="../chapter5/section4.html">
+            
+                    
+                    Addressing Determinism
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../chapter5/section5.html">
+            
+                <a href="../chapter5/section5.html">
+            
+                    
+                    Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../chapter5/section6.html">
+            
+                <a href="../chapter5/section6.html">
+            
+                    
+                    Exactly Once in Sources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../chapter5/section7.html">
+            
+                <a href="../chapter5/section7.html">
+            
+                    
+                    Exactly Once in Sinks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../chapter5/section8.html">
+            
+                <a href="../chapter5/section8.html">
+            
+                    
+                    Use Cases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../chapter5/section8.html">
+            
+                <a href="../chapter5/section8.html">
+            
+                    
+                    Other Systems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../chapter5/section9.html">
+            
+                <a href="../chapter5/section9.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter6/">
+            
+                <a href="../chapter6/">
+            
+                    
+                    Chapter6 Streams and Tables
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chapter6/section1.html">
+            
+                <a href="../chapter6/section1.html">
+            
+                    
+                    Stream-and-Table Basics Or: a Special Theory of Stream and Table Relativity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../chapter6/section2.html">
+            
+                <a href="../chapter6/section2.html">
+            
+                    
+                    Batch Processing Versus Streams and Tables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../chapter6/section3.html">
+            
+                <a href="../chapter6/section3.html">
+            
+                    
+                    What, Where, When, and How in a Streams and Tables World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../chapter6/section4.html">
+            
+                <a href="../chapter6/section4.html">
+            
+                    
+                    A General Theory of Stream and Table Relativity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../chapter6/section5.html">
+            
+                <a href="../chapter6/section5.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Chapter 7. The Practicalities of Persistent State
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="section1.html">
+            
+                <a href="section1.html">
+            
+                    
+                    Motivation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9.2" data-path="section2.html">
+            
+                <a href="section2.html">
+            
+                    
+                    Implicit State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="section3.html">
+            
+                <a href="section3.html">
+            
+                    
+                    Generalized State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="section4.html">
+            
+                <a href="section4.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../chapter8/">
+            
+                <a href="../chapter8/">
+            
+                    
+                    Chapter 8. Streaming SQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../chapter8/section1.html">
+            
+                <a href="../chapter8/section1.html">
+            
+                    
+                    What Is Streaming SQL?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../chapter8/section2.html">
+            
+                <a href="../chapter8/section2.html">
+            
+                    
+                    Looking Backward: Stream and Table Biases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../chapter8/section3.html">
+            
+                <a href="../chapter8/section3.html">
+            
+                    
+                    Looking Forward: Toward Robust Streaming SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../chapter8/section4.html">
+            
+                <a href="../chapter8/section4.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../chapter9/">
+            
+                <a href="../chapter9/">
+            
+                    
+                    Chapter 9. Streaming Joins
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../chapter9/section2.html">
+            
+                <a href="../chapter9/section2.html">
+            
+                    
+                    All Your Joins Are Belong to Streaming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../chapter9/section3.html">
+            
+                <a href="../chapter9/section3.html">
+            
+                    
+                    Unwindowed Joins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../chapter9/section4.html">
+            
+                <a href="../chapter9/section4.html">
+            
+                    
+                    Windowed Joins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../chapter9/section5.html">
+            
+                <a href="../chapter9/section5.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../chapter10/">
+            
+                <a href="../chapter10/">
+            
+                    
+                    Chapter 10. The Evolution of Large-Scale Data Processing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../chapter10/section1.html">
+            
+                <a href="../chapter10/section1.html">
+            
+                    
+                    MapReduce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../chapter10/section2.html">
+            
+                <a href="../chapter10/section2.html">
+            
+                    
+                    Hadoop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../chapter10/section3.html">
+            
+                <a href="../chapter10/section3.html">
+            
+                    
+                    Flume
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../chapter10/section4.html">
+            
+                <a href="../chapter10/section4.html">
+            
+                    
+                    Storm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../chapter10/section5.html">
+            
+                <a href="../chapter10/section5.html">
+            
+                    
+                    Spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../chapter10/section6.html">
+            
+                <a href="../chapter10/section6.html">
+            
+                    
+                    MillWheel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../chapter10/section7.html">
+            
+                <a href="../chapter10/section7.html">
+            
+                    
+                    Kafaka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../chapter10/section8.html">
+            
+                <a href="../chapter10/section8.html">
+            
+                    
+                    CloudDataFlow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../chapter10/section9.html">
+            
+                <a href="../chapter10/section9.html">
+            
+                    
+                    Flink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="../chapter10/section9.html">
+            
+                <a href="../chapter10/section9.html">
+            
+                    
+                    Beam
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="../chapter10/section10.html">
+            
+                <a href="../chapter10/section10.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Implicit State</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="implicit-state">Implicit State</h2>
+<p>Let&#x2019;s now begin to talk about the practicalities of persistent state. In most
+cases, this essentially boils down to finding the right balance between always
+persisting everything (good for consistency, bad for efficiency) and never
+persisting anything (bad for consistency, good for efficiency). We&#x2019;ll begin at
+the always-persisting-everything end of the spectrum, and work our way in
+the other direction, looking at ways of trading off complexity of
+implementation for efficiency without compromising consistency (because
+compromising consistency by never persisting anything is the easy way out
+for cases in which consistency doesn&#x2019;t matter, and a nonoption, otherwise).
+As before, we use the Apache Beam APIs to concretely ground our
+discussions, but the concepts we discuss are applicable across most systems
+in existence today.</p>
+<p>Also, because there isn&#x2019;t much you can do to reduce the size of raw inputs,
+short of perhaps compressing the data, our discussion centers around the
+ways data are persisted within the intermediate state tables created as part of</p>
+<p>grouping operations within a pipeline. The inherent nature of grouping
+multiple records together into some sort of composite will provide us with
+opportunities to eke out gains in efficiency at the cost of implementation
+complexity.</p>
+<h2 id="raw-grouping">Raw Grouping</h2>
+<p>The first step in our exploration, at the always-persisting-everything end of
+the spectrum, is the most straightforward implementation of grouping within
+a pipeline: raw grouping of the inputs. The grouping operation in this case is
+typically akin to list appending: any time a new element arrives in the group,
+it&#x2019;s appended to the list of elements seen for that group.</p>
+<p>In Beam, this is exactly what you get when you apply a GroupByKey
+transform to a PCollection. The stream representing that PCollection in
+motion is grouped by key to yield a table at rest containing the records from
+the stream, grouped together as lists of values with identical keys. This
+shows up in the PTransform signature for GroupByKey, which declares the
+input as a PCollection of K/V pairs, and the output as a collection of</p>
+<p>K/Iterable<v> pairs:</v></p>
+<pre><code>class GroupByKey&lt;K, V&gt; extends PTransform&lt;
+PCollection&lt;KV&lt;K, V&gt;&gt;, PCollection&lt;KV&lt;K, Iterable&lt;V&gt;&gt;&gt;&gt;&gt;
+</code></pre><p>Every time a trigger fires for a key+window in that table, it will emit a new
+pane for that key+window, with the value being the Iterable<v> we see in
+the preceding signature.</v></p>
+<p>Let&#x2019;s look at an example in action in Example 7-1. We&#x2019;ll take the summation
+pipeline from Example 6-5 (the one with fixed windowing and early/on-
+time/late triggers) and convert it to use raw grouping instead of incremental
+combination (which we discuss a little later in this chapter). We do this by</p>
+<p>first applying a GroupByKey transformation to the parsed user/score
+key/value pairs. The GroupByKey operation performs raw grouping, yielding
+a PCollection with key/value pairs of users and Iterable<integer></integer></p>
+<pre><code>2
+</code></pre><p>groups of scores. We then sum up all of the Integers in each iterable by
+using a simple MapElements lambda that converts the Iterable<integer>
+into an IntStream<integer> and calls sum on it.</integer></integer></p>
+<p><em>Example 7-1. Early, on-time, and late firings via the early/on-time/late API</em></p>
+<p>PCollection<string> raw = IO.read(...);
+PCollection<kv<team, integer="">&gt; input = raw.apply(new ParseFn());
+PCollection<kv<team, integer="">&gt; groupedScores = input
+.apply(Window.into(FixedWindows.of(TWO_MINUTES))
+.triggering(
+AfterWatermark()
+.withEarlyFirings(AlignedDelay(ONE_MINUTE))
+.withLateFirings(AfterCount(1))))
+.apply(GroupBy.<string, integer="">create());
+PCollection<kv<team, integer="">&gt; totals = input
+.apply(MapElements.via((KV<string, iterable<integer="">&gt; kv) -&gt;
+StreamSupport.intStream(
+kv.getValue().spliterator(), false).sum()));</string,></kv<team,></string,></kv<team,></kv<team,></string></p>
+<p>Looking at this pipeline in action, we would see something like that depicted
+in Figure 7-1.</p>
+<p><em>Figure 7-1. Summation via raw grouping of inputs with windowing and early/on-time/late
+triggering. The raw inputs are grouped together and stored in the table via the
+GroupByKey transformation. After being triggered, the MapElements lambda sums the raw
+inputs within a single pane together to yield per-team scores.</em></p>
+<p>Comparing this to Figure 6-10 (which was using incremental combining,
+discussed shortly), it&#x2019;s clear to see this is a lot worse. First, we&#x2019;re storing a lot
+more data: instead of a single integer per window, we now store all the inputs
+for that window. Second, if we have multiple trigger firings, we&#x2019;re
+duplicating effort by re-summing inputs we already added together for
+previous trigger firings. And finally, if the grouping operation is the point at
+which we checkpoint our state to persistent storage, upon machine failure we
+again must recompute the sums for any retriggerings of the table. That&#x2019;s a lot
+of duplicated data and computation. Far better would be to incrementally
+compute and checkpoint the actual sums, which is an example of <em>incremental
+combining</em>.</p>
+<h2 id="incremental-combining">Incremental Combining</h2>
+<pre><code>00:00 / 00:00
+</code></pre><p>The first step in our journey of trading implementation complexity for
+efficiency is incremental combining. This concept is manifested in the Beam
+API via the CombineFn class. In a nutshell, incremental combining is a form
+of automatic state built upon a user-defined associative and commutative
+combining operator (if you&#x2019;re not sure what I mean by these two terms, I
+define them more precisely in a moment). Though not strictly necessary for
+the discussion that follows, the important parts of the CombineFn API look
+like Example 7-2.</p>
+<p><em>Example 7-2. Abbreviated CombineFn API from Apache Beam</em></p>
+<p>class CombineFn<inputt, accumt,="" outputt=""> {
+// Returns an accumulator representing the empty value.
+AccumT createAccumulator();</inputt,></p>
+<p>// Adds the given input value into the given accumulator
+AccumT addInput(AccumT accumulator, InputT input);</p>
+<p>// Merges the given accumulators into a new, combined accumulator
+AccumT mergeAccumulators(Iterable<accumt> accumulators);</accumt></p>
+<p>// Returns the output value for the given accumulator
+OutputT extractOutput(AccumT accumulator);
+}</p>
+<p>A CombineFn accepts inputs of type InputT, which can be combined together</p>
+<p>into partial aggregates called <em>accumulators</em> , of type AccumT. These
+accumulators themselves can also be combined together into new
+accumulators. And finally, an accumulator can be transformed into an output
+value of type OutputT. For something like an average, the inputs might be</p>
+<p>integers, the accumulators pairs of integers (i.e., Pair<sum of="" inputs,="" count="" inputs="">), and the output a single floating-point value
+representing the mean value of the combined inputs.</sum></p>
+<p>But what does all this structure buy us? Conceptually, the basic idea with
+incremental combining is that many types of aggregations (sum, mean, etc.)
+exhibit the following properties:</p>
+<pre><code>Incremental aggregations possess an intermediate form that captures
+</code></pre><p>the <em>partial progress</em> of combining a set of <em>N</em> inputs <em>more compactly</em>
+than the full list of those inputs themselves (i.e., the AccumT type in</p>
+<p>CombineFn). As discussed earlier, for mean, this is a sum/count pair.
+Basic summation is even simpler, with a single number as its
+accumulator. A histogram would have a relatively complex
+accumulator composed of buckets, where each bucket contains a
+count for the number of values seen within some specific range. In
+all three cases, however, the amount of space consumed by an
+accumulator that represents the aggregation of <em>N</em> elements remains
+significantly smaller than the amount of space consumed by the
+original <em>N</em> elements themselves, particularly as the size of <em>N</em> grows.</p>
+<p>Incremental aggregations are <em>indifferent to ordering</em> across two
+dimensions:</p>
+<pre><code>Individual elements , meaning:
+COMBINE(a, b) == COMBINE(b, a)
+Groupings of elements , meaning:
+COMBINE(COMBINE(a, b), c) == COMBINE(a,
+COMBINE(b, c))
+</code></pre><p>These properties are known as <em>commutativity</em> and <em>associativity</em> ,
+respectively. In concert, they effectively mean that we are free to
+combine elements and partial aggregates in any arbitrary order and
+with any arbitrary subgrouping. This allows us to optimize the
+aggregation in two ways:</p>
+<p>Incrementalization</p>
+<pre><code>Because the order of individual inputs doesn&#x2019;t matter, we don&#x2019;t
+need to buffer all of the inputs ahead of time and then process
+them in some strict order (e.g., in order of event time; note,
+however, that this remains independent of shuffling elements by
+event time into proper event-time windows before aggregating);
+we can simply combine them one-by-one as they arrive. This not
+</code></pre><pre><code>3
+</code></pre><pre><code>only greatly reduces the amount of data that must be buffered
+(thanks to the first property of our operation, which stated the
+intermediate form was a more compact representation of partial
+aggregation than the raw inputs themselves), but also spreads the
+computation load more evenly over time (versus aggregating a
+burst of inputs all at once after the full input set has been
+buffered).
+</code></pre><p>Parallelization</p>
+<pre><code>Because the order in which partial subgroups of inputs are
+combined doesn&#x2019;t matter, we&#x2019;re free to arbitrarily distribute the
+computation of those subgroups. More specifically, we&#x2019;re free to
+spread the computation of those subgroups across a plurality of
+machines. This optimization is at the heart of MapReduce&#x2019;s
+Combiners (the genesis of Beam&#x2019;s CombineFn).
+MapReduce&#x2019;s Combiner optimization is essential to solving the
+hot-key problem, where some sort of grouping computation is
+performed on an input stream that is too large to be reasonably
+processed by a single physical machine. A canonical example is
+breaking down high-volume analytics data (e.g., web traffic to a
+popular website) across a relatively low number of dimensions
+(e.g., by web browser family: Chrome, Firefox, Safari, etc.). For
+websites with a particularly high volume of traffic, it&#x2019;s often
+intractable to calculate stats for any single web browser family
+on a single machine, even if that&#x2019;s the only thing that machine is
+dedicated to doing; there&#x2019;s simply too much traffic to keep up
+with. But with an associative and commutative operation like
+summation, it&#x2019;s possible to spread the initial aggregation across
+multiple machines, each of which computes a partial aggregate.
+The set of partial aggregates generated by those machines
+(whose size is now many of orders magnitude smaller than the
+original inputs) might then be further combined together on a
+single machine to yield the final aggregate result.
+</code></pre><pre><code>As an aside, this ability to parallelize also yields one additional
+benefit: the aggregation operation is naturally compatible with
+merging windows. When two windows merge, their values must
+somehow be merged, as well. With raw grouping, this means
+merging the two full lists of buffered values together, which has
+a cost of O(N). But with a CombineFn, it&#x2019;s a simple combination
+of two partial aggregates, typically an O(1) operation.
+</code></pre><p>For the sake of completeness, consider again Example 6-5, shown in
+Example 7-3, which implements a summation pipeline using incremental
+combination.</p>
+<p><em>Example 7-3. Grouping and summation via incremental combination, as in
+Example 6-5</em></p>
+<p>PCollection<string> raw = IO.read(...);
+PCollection<kv<team, integer="">&gt; input = raw.apply(new ParseFn());
+PCollection<kv<team, integer="">&gt; totals = input
+.apply(Window.into(FixedWindows.of(TWO_MINUTES))
+.triggering(
+AfterWatermark()
+.withEarlyFirings(AlignedDelay(ONE_MINUTE))
+.withLateFirings(AfterCount(1))))
+.apply(Sum.integersPerKey());</kv<team,></kv<team,></string></p>
+<p>When executed, we get what we saw Figure 6-10 (shown here in Figure 7-2).
+Compared to Figure 7-1, this is clearly a big improvement, with much greater
+efficiency in terms of amount of data stored and amount of computation
+performed.</p>
+<pre><code>Figure 7-2. Grouping and summation via incremental combination. In this version,
+incremental sums are computed and stored in the table rather than lists of inputs, which
+must later be summed together independently.
+</code></pre><p>By providing a more compact intermediate representation for a grouping
+operation, and by relaxing requirements on ordering (both at the element and
+subgroup levels), Beam&#x2019;s CombineFn trades off a certain amount of
+implementation complexity in exchange for increases in efficiency. In doing
+so, it provides a clean solution for the hot-key problem and also plays nicely
+with the concept of merging windows.</p>
+<p>One shortcoming, however, is that your grouping operation must fit within a
+relatively restricted structure. This is all well and good for sums, means, and
+so on, but there are plenty of real-world use cases in which a more general
+approach, one which allows precise control over trade-offs of complexity and
+efficiency, is needed. We&#x2019;ll look next at what such a general approach entails.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="section1.html" class="navigation navigation-prev " aria-label="Previous page: Motivation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="section3.html" class="navigation navigation-next " aria-label="Next page: Generalized State">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Implicit State","level":"1.9.2","depth":2,"next":{"title":"Generalized State","level":"1.9.3","depth":2,"path":"chapter7/section3.md","ref":"chapter7/section3.md","articles":[]},"previous":{"title":"Motivation","level":"1.9.1","depth":2,"path":"chapter7/section1.md","ref":"chapter7/section1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter7/section2.md","mtime":"2019-10-27T13:18:25.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-03T07:23:23.538Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

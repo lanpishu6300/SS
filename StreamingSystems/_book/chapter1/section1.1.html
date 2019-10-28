@@ -1,0 +1,1441 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Section1.1 Terminology: What Is Streaming? · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="section1.2.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../INTRODUCTION.html">
+            
+                <a href="../INTRODUCTION.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Chapter1 Streaming 101
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="section1.1.html">
+            
+                <a href="section1.1.html">
+            
+                    
+                    Section1.1 Terminology: What Is Streaming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="section1.2.html">
+            
+                <a href="section1.2.html">
+            
+                    
+                    Section1.2 Data Processing Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="summary.html">
+            
+                <a href="summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    Chapter2 The What, Where,When, and How of Data Processing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="section1.1.html">
+            
+                <a href="section1.1.html">
+            
+                    
+                    Section2.1 Roadmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter2/section1.2.html">
+            
+                <a href="../chapter2/section1.2.html">
+            
+                    
+                    Section2.2 Batch Foundations: What and Where
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter2/summary0.html">
+            
+                <a href="../chapter2/summary0.html">
+            
+                    
+                    Going Streaming: When and How
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter2/summary.html">
+            
+                <a href="../chapter2/summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter3/">
+            
+                <a href="../chapter3/">
+            
+                    
+                    Chapter3  Watermarks
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter3/section1.html">
+            
+                <a href="../chapter3/section1.html">
+            
+                    
+                    Section3.1 Definition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter3/section2.html">
+            
+                <a href="../chapter3/section2.html">
+            
+                    
+                    Section3.2 Source Watermark Creation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter3/section3.html">
+            
+                <a href="../chapter3/section3.html">
+            
+                    
+                    Watermark Propagation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter3/section4.html">
+            
+                <a href="../chapter3/section4.html">
+            
+                    
+                    Percentile Watermarks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../chapter3/section5.html">
+            
+                <a href="../chapter3/section5.html">
+            
+                    
+                    Processing-Time Watermarks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../chapter3/section6.html">
+            
+                <a href="../chapter3/section6.html">
+            
+                    
+                    Case Studies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../chapter3/section7.html">
+            
+                <a href="../chapter3/section7.html">
+            
+                    
+                    Watermark Propagation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../chapter3/summary.md">
+            
+                <span>
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter4/">
+            
+                <a href="../chapter4/">
+            
+                    
+                    Chapter 4. Advanced Windowing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter4/section1.html">
+            
+                <a href="../chapter4/section1.html">
+            
+                    
+                    When/Where: Processing-Time Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter4/section2.html">
+            
+                <a href="../chapter4/section2.html">
+            
+                    
+                    Where: Session Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter4/section3.html">
+            
+                <a href="../chapter4/section3.html">
+            
+                    
+                    Where: Custom Windowing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../chapter4/summary.html">
+            
+                <a href="../chapter4/summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    Chapter5 Exactly-Once and Side Effects
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter5/section1.html">
+            
+                <a href="../chapter5/section1.html">
+            
+                    
+                    Why Exactly Once Matters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../chapter5/section2.html">
+            
+                <a href="../chapter5/section2.html">
+            
+                    
+                    Accuracy Versus Completeness
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../chapter5/section3.html">
+            
+                <a href="../chapter5/section3.html">
+            
+                    
+                    Ensuring Exactly Once in Shuffle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../chapter5/section4.html">
+            
+                <a href="../chapter5/section4.html">
+            
+                    
+                    Addressing Determinism
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../chapter5/section5.html">
+            
+                <a href="../chapter5/section5.html">
+            
+                    
+                    Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../chapter5/section6.html">
+            
+                <a href="../chapter5/section6.html">
+            
+                    
+                    Exactly Once in Sources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../chapter5/section7.html">
+            
+                <a href="../chapter5/section7.html">
+            
+                    
+                    Exactly Once in Sinks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../chapter5/section8.html">
+            
+                <a href="../chapter5/section8.html">
+            
+                    
+                    Use Cases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../chapter5/section8.html">
+            
+                <a href="../chapter5/section8.html">
+            
+                    
+                    Other Systems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../chapter5/section9.html">
+            
+                <a href="../chapter5/section9.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter6/">
+            
+                <a href="../chapter6/">
+            
+                    
+                    Chapter6 Streams and Tables
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chapter6/section1.html">
+            
+                <a href="../chapter6/section1.html">
+            
+                    
+                    Stream-and-Table Basics Or: a Special Theory of Stream and Table Relativity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../chapter6/section2.html">
+            
+                <a href="../chapter6/section2.html">
+            
+                    
+                    Batch Processing Versus Streams and Tables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../chapter6/section3.html">
+            
+                <a href="../chapter6/section3.html">
+            
+                    
+                    What, Where, When, and How in a Streams and Tables World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../chapter6/section4.html">
+            
+                <a href="../chapter6/section4.html">
+            
+                    
+                    A General Theory of Stream and Table Relativity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../chapter6/section5.html">
+            
+                <a href="../chapter6/section5.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter7/">
+            
+                <a href="../chapter7/">
+            
+                    
+                    Chapter 7. The Practicalities of Persistent State
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chapter7/section1.html">
+            
+                <a href="../chapter7/section1.html">
+            
+                    
+                    Motivation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chapter7/section2.html">
+            
+                <a href="../chapter7/section2.html">
+            
+                    
+                    Implicit State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../chapter7/section3.html">
+            
+                <a href="../chapter7/section3.html">
+            
+                    
+                    Generalized State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../chapter7/section4.html">
+            
+                <a href="../chapter7/section4.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../chapter8/">
+            
+                <a href="../chapter8/">
+            
+                    
+                    Chapter 8. Streaming SQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../chapter8/section1.html">
+            
+                <a href="../chapter8/section1.html">
+            
+                    
+                    What Is Streaming SQL?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../chapter8/section2.html">
+            
+                <a href="../chapter8/section2.html">
+            
+                    
+                    Looking Backward: Stream and Table Biases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../chapter8/section3.html">
+            
+                <a href="../chapter8/section3.html">
+            
+                    
+                    Looking Forward: Toward Robust Streaming SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../chapter8/section4.html">
+            
+                <a href="../chapter8/section4.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../chapter9/">
+            
+                <a href="../chapter9/">
+            
+                    
+                    Chapter 9. Streaming Joins
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../chapter9/section2.html">
+            
+                <a href="../chapter9/section2.html">
+            
+                    
+                    All Your Joins Are Belong to Streaming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../chapter9/section3.html">
+            
+                <a href="../chapter9/section3.html">
+            
+                    
+                    Unwindowed Joins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../chapter9/section4.html">
+            
+                <a href="../chapter9/section4.html">
+            
+                    
+                    Windowed Joins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../chapter9/section5.html">
+            
+                <a href="../chapter9/section5.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../chapter10/">
+            
+                <a href="../chapter10/">
+            
+                    
+                    Chapter 10. The Evolution of Large-Scale Data Processing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../chapter10/section1.html">
+            
+                <a href="../chapter10/section1.html">
+            
+                    
+                    MapReduce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../chapter10/section2.html">
+            
+                <a href="../chapter10/section2.html">
+            
+                    
+                    Hadoop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../chapter10/section3.html">
+            
+                <a href="../chapter10/section3.html">
+            
+                    
+                    Flume
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../chapter10/section4.html">
+            
+                <a href="../chapter10/section4.html">
+            
+                    
+                    Storm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../chapter10/section5.html">
+            
+                <a href="../chapter10/section5.html">
+            
+                    
+                    Spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../chapter10/section6.html">
+            
+                <a href="../chapter10/section6.html">
+            
+                    
+                    MillWheel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../chapter10/section7.html">
+            
+                <a href="../chapter10/section7.html">
+            
+                    
+                    Kafaka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../chapter10/section8.html">
+            
+                <a href="../chapter10/section8.html">
+            
+                    
+                    CloudDataFlow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../chapter10/section9.html">
+            
+                <a href="../chapter10/section9.html">
+            
+                    
+                    Flink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="../chapter10/section9.html">
+            
+                <a href="../chapter10/section9.html">
+            
+                    
+                    Beam
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="../chapter10/section10.html">
+            
+                <a href="../chapter10/section10.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Section1.1 Terminology: What Is Streaming?</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="terminology-what-is-streaming">Terminology: What Is Streaming?</h2>
+<p>Before going any further, I&#x2019;d like to get one thing out of the way: what is
+streaming? The term streaming is used today to mean a variety of different
+things (and for simplicity I&#x2019;ve been using it somewhat loosely up until now),
+which can lead to misunderstandings about what streaming really is or what
+streaming systems are actually capable of. As a result, I would prefer to
+define the term somewhat precisely.</p>
+<p>The crux of the problem is that many things that ought to be described by
+<em>what</em> they are (unbounded data processing, approximate results, etc.), have
+come to be described colloquially by <em>how</em> they historically have been
+accomplished (i.e., via streaming execution engines). This lack of precision
+in terminology clouds what streaming really means, and in some cases it
+burdens streaming systems themselves with the implication that their
+capabilities are limited to characteristics historically described as
+&#x201C;streaming,&#x201D; such as approximate or speculative results.</p>
+<p>Given that well-designed streaming systems are just as capable (technically
+more so) of producing correct, consistent, repeatable results as any existing
+batch engine, I prefer to isolate the term &#x201C;streaming&#x201D; to a very specific
+meaning:</p>
+<p>Streaming system</p>
+<pre><code>A type of data processing engine that is designed with infinite datasets in
+mind.
+</code></pre><p>If I want to talk about low-latency, approximate, or speculative results, I use
+those specific words rather than imprecisely calling them &#x201C;streaming.&#x201D;</p>
+<p>Precise terms are also useful when discussing the different types of data one
+might encounter. From my perspective, there are two important (and
+orthogonal) dimensions that define the shape of a given dataset: <em>cardinality</em>
+and <em>constitution</em>.</p>
+<p>The cardinality of a dataset dictates its size, with the most salient aspect of
+cardinality being whether a given dataset is finite or infinite. Here are the two
+terms I prefer to use for describing the coarse cardinality in a dataset:</p>
+<p>Bounded data</p>
+<pre><code>A type of dataset that is finite in size.
+</code></pre><p>Unbounded data</p>
+<pre><code>A type of dataset that is infinite in size (at least theoretically).
+</code></pre><p>Cardinality is important because the unbounded nature of infinite datasets
+imposes additional burdens on data processing frameworks that consume
+them. More on this in the next section.</p>
+<p>The constitution of a dataset, on the other hand, dictates its physical
+manifestation. As a result, the constitution defines the ways one can interact
+with the data in question. We won&#x2019;t get around to deeply examining
+constitutions until Chapter 6, but to give you a brief sense of things, there are
+two primary constitutions of importance:</p>
+<p>Table</p>
+<pre><code>1
+</code></pre><pre><code>A holistic view of a dataset at a specific point in time. SQL systems have
+traditionally dealt in tables.
+</code></pre><p>Stream</p>
+<pre><code>An element-by-element view of the evolution of a dataset over time. The
+MapReduce lineage of data processing systems have traditionally dealt in
+streams.
+</code></pre><p>We look quite deeply at the relationship between streams and tables in
+Chapters 6 , 8 , and 9 , and in Chapter 8 we also learn about the unifying
+underlying concept of <em>time-varying relations</em> that ties them together. But until
+then, we deal primarily in streams because that&#x2019;s the constitution pipeline
+developers directly interact with in most data processing systems today (both
+batch and streaming). It&#x2019;s also the constitution that most naturally embodies
+the challenges that are unique to stream processing.</p>
+<h2 id="on-the-greatly-exaggerated-limitations-of">On the Greatly Exaggerated Limitations of</h2>
+<h2 id="streaming">Streaming</h2>
+<p>On that note, let&#x2019;s next talk a bit about what streaming systems can and can&#x2019;t
+do, with an emphasis on can. One of the biggest things I want to get across in
+this chapter is just how capable a well-designed streaming system can be.
+Streaming systems have historically been relegated to a somewhat niche
+market of providing low-latency, inaccurate, or speculative results, often in
+conjunction with a more capable batch system to provide eventually correct
+results; in other words, the Lambda Architecture.</p>
+<p>For those of you not already familiar with the Lambda Architecture, the basic
+idea is that you run a streaming system alongside a batch system, both
+performing essentially the same calculation. The streaming system gives you
+low-latency, inaccurate results (either because of the use of an approximation
+algorithm, or because the streaming system itself does not provide
+correctness), and some time later a batch system rolls along and provides you
+with correct output. Originally proposed by Twitter&#x2019;s Nathan Marz (creator
+of Storm), it ended up being quite successful because it was, in fact, a</p>
+<pre><code>2
+</code></pre><p>fantastic idea for the time; streaming engines were a bit of a letdown in the
+correctness department, and batch engines were as inherently unwieldy as
+you&#x2019;d expect, so Lambda gave you a way to have your proverbial cake and
+eat it too. Unfortunately, maintaining a Lambda system is a hassle: you need
+to build, provision, and maintain two independent versions of your pipeline
+and then also somehow merge the results from the two pipelines at the end.</p>
+<p>As someone who spent years working on a strongly consistent streaming
+engine, I also found the entire principle of the Lambda Architecture a bit
+unsavory. Unsurprisingly, I was a huge fan of Jay Kreps&#x2019; &#x201C;Questioning the
+Lambda Architecture&#x201D; post when it came out. Here was one of the first highly
+visible statements against the necessity of dual-mode execution. Delightful.
+Kreps addressed the issue of repeatability in the context of using a replayable
+system like Kafka as the streaming interconnect, and went so far as to
+propose the Kappa Architecture, which basically means running a single
+pipeline using a well-designed system that&#x2019;s appropriately built for the job at
+hand. I&#x2019;m not convinced that notion requires its own Greek letter name, but I
+fully support the idea in principle.</p>
+<p>Quite honestly, I&#x2019;d take things a step further. I would argue that well-
+designed streaming systems actually provide a strict superset of batch
+functionality. Modulo perhaps an efficiency delta, there should be no need for
+batch systems as they exist today. And kudos to the Apache Flink folks for
+taking this idea to heart and building a system that&#x2019;s all-streaming-all-the-
+time under the covers, even in &#x201C;batch&#x201D; mode; I love it.</p>
+<h3 id="batch-and-streaming-efficiency-differences">BATCH AND STREAMING EFFICIENCY DIFFERENCES</h3>
+<pre><code>One which I propose is not an inherent limitation of streaming systems,
+but simply a consequence of design choices made in most streaming
+systems thus far. The efficiency delta between batch and streaming is
+largely the result of the increased bundling and more efficient shuffle
+transports found in batch systems. Modern batch systems go to great
+lengths to implement sophisticated optimizations that allow for
+remarkable levels of throughput using surprisingly modest compute
+resources. There&#x2019;s no reason the types of clever insights that make batch
+</code></pre><pre><code>systems the efficiency heavyweights they are today couldn&#x2019;t be
+incorporated into a system designed for unbounded data, providing users
+flexible choice between what we typically consider to be high-latency,
+higher-efficiency &#x201C;batch&#x201D; processing and low-latency, lower-efficiency
+&#x201C;streaming&#x201D; processing. This is effectively what we&#x2019;ve done at Google
+with Cloud Dataflow by providing both batch and streaming runners
+under the same unified model. In our case, we use separate runners
+because we happen to have two independently designed systems
+optimized for their specific use cases. Long term, from an engineering
+perspective, I&#x2019;d love to see us merge the two into a single system that
+incorporates the best parts of both while still maintaining the flexibility of
+choosing an appropriate efficiency level. But that&#x2019;s not what we have
+today. And honestly, thanks to the unified Dataflow Model, it&#x2019;s not even
+strictly necessary; so it may well never happen.
+</code></pre><p>The corollary of all this is that broad maturation of streaming systems
+combined with robust frameworks for unbounded data processing will in time
+allow for the relegation of the Lambda Architecture to the antiquity of big
+data history where it belongs. I believe the time has come to make this a
+reality. Because to do so&#x2014;that is, to beat batch at its own game&#x2014;you really
+only need two things:</p>
+<p>Correctness</p>
+<pre><code>This gets you parity with batch. At the core, correctness boils down to
+consistent storage. Streaming systems need a method for checkpointing
+persistent state over time (something Kreps has talked about in his &#x201C;Why
+local state is a fundamental primitive in stream processing&#x201D; post), and it
+must be well designed enough to remain consistent in light of machine
+failures. When Spark Streaming first appeared in the public big data
+scene a few years ago, it was a beacon of consistency in an otherwise
+dark streaming world. Thankfully, things have improved substantially
+since then, but it is remarkable how many streaming systems still try to
+get by without strong consistency.
+To reiterate&#x2014;because this point is important: strong consistency is
+3
+</code></pre><pre><code>required for exactly-once processing, which is required for correctness,
+which is a requirement for any system that&#x2019;s going to have a chance at
+meeting or exceeding the capabilities of batch systems. Unless you just
+truly don&#x2019;t care about your results, I implore you to shun any streaming
+system that doesn&#x2019;t provide strongly consistent state. Batch systems don&#x2019;t
+require you to verify ahead of time if they are capable of producing
+correct answers; don&#x2019;t waste your time on streaming systems that can&#x2019;t
+meet that same bar.
+If you&#x2019;re curious to learn more about what it takes to get strong
+consistency in a streaming system, I recommend you check out the
+MillWheel, Spark Streaming, and Flink snapshotting papers. All three
+spend a significant amount of time discussing consistency. Reuven will
+dive into consistency guarantees in Chapter 5, and if you still find
+yourself craving more, there&#x2019;s a large amount of quality information on
+this topic in the literature and elsewhere.
+</code></pre><p>Tools for reasoning about time</p>
+<pre><code>This gets you beyond batch. Good tools for reasoning about time are
+essential for dealing with unbounded, unordered data of varying event-
+time skew. An increasing number of modern datasets exhibit these
+characteristics, and existing batch systems (as well as many streaming
+systems) lack the necessary tools to cope with the difficulties they impose
+(though this is now rapidly changing, even as I write this). We will spend
+the bulk of this book explaining and focusing on various facets of this
+point.
+To begin with, we get a basic understanding of the important concept of
+time domains, after which we take a deeper look at what I mean by
+unbounded, unordered data of varying event-time skew. We then spend
+the rest of this chapter looking at common approaches to bounded and
+unbounded data processing, using both batch and streaming systems.
+</code></pre><h2 id="event-time-versus-processing-time">Event Time Versus Processing Time</h2>
+<pre><code>3
+</code></pre><p>To speak cogently about unbounded data processing requires a clear
+understanding of the domains of time involved. Within any data processing
+system, there are typically two domains of time that we care about:</p>
+<p>Event time</p>
+<pre><code>This is the time at which events actually occurred.
+</code></pre><p>Processing time</p>
+<pre><code>This is the time at which events are observed in the system.
+</code></pre><p>Not all use cases care about event times (and if yours doesn&#x2019;t, hooray! your
+life is easier), but many do. Examples include characterizing user behavior
+over time, most billing applications, and many types of anomaly detection, to
+name a few.</p>
+<p>In an ideal world, event time and processing time would always be equal,
+with events being processed immediately as they occur. Reality is not so
+kind, however, and the skew between event time and processing time is not
+only nonzero, but often a highly variable function of the characteristics of the
+underlying input sources, execution engine, and hardware. Things that can
+affect the level of skew include the following:</p>
+<pre><code>Shared resource limitations, like network congestion, network
+partitions, or shared CPU in a nondedicated environment
+</code></pre><pre><code>Software causes such as distributed system logic, contention, and so
+on
+</code></pre><pre><code>Features of the data themselves, like key distribution, variance in
+throughput, or variance in disorder (i.e., a plane full of people taking
+their phones out of airplane mode after having used them offline for
+the entire flight)
+</code></pre><p>As a result, if you plot the progress of event time and processing time in any
+real-world system, you typically end up with something that looks a bit like
+the red line in Figure 1-1.</p>
+<p><img src="../images/stsy_0101.png" alt="PNG"></p>
+<pre><code>Figure 1-1. Time-domain mapping. The x-axis represents event-time completeness in the
+system; that is, the time X in event time up to which all data with event times less than X
+have been observed. The y-axis represents the progress of processing time; that is, normal
+clock time as observed by the data processing system as it executes.
+</code></pre><p>In Figure 1-1, the black dashed line with slope of 1 represents the ideal,
+where processing time and event time are exactly equal; the red line
+represents reality. In this example, the system lags a bit at the beginning of
+processing time, veers closer toward the ideal in the middle, and then lags</p>
+<pre><code>4
+</code></pre><p>again a bit toward the end. At first glance, there are two types of skew visible
+in this diagram, each in different time domains:</p>
+<p>Processing time</p>
+<pre><code>The vertical distance between the ideal and the red line is the lag in the
+processing-time domain. That distance tells you how much delay is
+observed (in processing time) between when the events for a given time
+occurred and when they were processed. This is the perhaps the more
+natural and intuitive of the two skews.
+</code></pre><p>Event time</p>
+<pre><code>The horizontal distance between the ideal and the red line is the amount
+of event-time skew in the pipeline at that moment. It tells you how far
+behind the ideal (in event time) the pipeline is currently.
+</code></pre><p>In reality, processing-time lag and event-time skew at any given point in time
+are identical; they&#x2019;re just two ways of looking at the same thing. The
+important takeaway regarding lag/skew is this: Because the overall mapping
+between event time and processing time is not static (i.e., the lag/skew can
+vary arbitrarily over time), this means that you cannot analyze your data
+solely within the context of when they are observed by your pipeline if you
+care about their event times (i.e., when the events actually occurred).
+Unfortunately, this is the way many systems designed for unbounded data
+have historically operated. To cope with the infinite nature of unbounded
+datasets, these systems typically provide some notion of windowing the
+incoming data. We discuss windowing in great depth a bit later, but it
+essentially means chopping up a dataset into finite pieces along temporal
+boundaries. If you care about correctness and are interested in analyzing your
+data in the context of their event times, you cannot define those temporal
+boundaries using processing time (i.e., processing-time windowing), as many
+systems do; with no consistent correlation between processing time and event
+time, some of your event-time data are going to end up in the wrong
+processing-time windows (due to the inherent lag in distributed systems, the
+online/offline nature of many types of input sources, etc.), throwing
+correctness out the window, as it were. We look at this problem in more</p>
+<pre><code>5
+</code></pre><p>detail in a number of examples in the sections that follow, as well as the
+remainder of the book.</p>
+<p>Unfortunately, the picture isn&#x2019;t exactly rosy when windowing by event time,
+either. In the context of unbounded data, disorder and variable skew induce a
+completeness problem for event-time windows: lacking a predictable
+mapping between processing time and event time, how can you determine
+when you&#x2019;ve observed all of the data for a given event time <em>X</em>? For many
+real-world data sources, you simply can&#x2019;t. But the vast majority of data
+processing systems in use today rely on some notion of completeness, which
+puts them at a severe disadvantage when applied to unbounded datasets.</p>
+<p>I propose that instead of attempting to groom unbounded data into finite
+batches of information that eventually become complete, we should be
+designing tools that allow us to live in the world of uncertainty imposed by
+these complex datasets. New data will arrive, old data might be retracted or
+updated, and any system we build should be able to cope with these facts on
+its own, with notions of completeness being a convenient optimization for
+specific and appropriate use cases rather than a semantic necessity across all
+of them.</p>
+<p>Before getting into specifics about what such an approach might look like,
+let&#x2019;s finish up one more useful piece of background: common data processing
+patterns.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Chapter1 Streaming 101">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="section1.2.html" class="navigation navigation-next " aria-label="Next page: Section1.2 Data Processing Patterns">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Section1.1 Terminology: What Is Streaming?","level":"1.3.1","depth":2,"next":{"title":"Section1.2 Data Processing Patterns","level":"1.3.2","depth":2,"path":"chapter1/section1.2.md","ref":"chapter1/section1.2.md","articles":[]},"previous":{"title":"Chapter1 Streaming 101","level":"1.3","depth":1,"path":"chapter1/README.md","ref":"chapter1/README.md","articles":[{"title":"Section1.1 Terminology: What Is Streaming?","level":"1.3.1","depth":2,"path":"chapter1/section1.1.md","ref":"chapter1/section1.1.md","articles":[]},{"title":"Section1.2 Data Processing Patterns","level":"1.3.2","depth":2,"path":"chapter1/section1.2.md","ref":"chapter1/section1.2.md","articles":[]},{"title":"Summary","level":"1.3.3","depth":2,"path":"chapter1/summary.md","ref":"chapter1/summary.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/section1.1.md","mtime":"2019-10-03T11:35:30.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-03T07:23:23.538Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

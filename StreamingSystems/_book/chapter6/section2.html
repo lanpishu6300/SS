@@ -1,0 +1,1345 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Batch Processing Versus Streams and Tables · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="section3.html" />
+    
+    
+    <link rel="prev" href="section1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../INTRODUCTION.html">
+            
+                <a href="../INTRODUCTION.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    Chapter1 Streaming 101
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter1/section1.1.html">
+            
+                <a href="../chapter1/section1.1.html">
+            
+                    
+                    Section1.1 Terminology: What Is Streaming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter1/section1.2.html">
+            
+                <a href="../chapter1/section1.2.html">
+            
+                    
+                    Section1.2 Data Processing Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter1/summary.html">
+            
+                <a href="../chapter1/summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    Chapter2 The What, Where,When, and How of Data Processing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter1/section1.1.html">
+            
+                <a href="../chapter1/section1.1.html">
+            
+                    
+                    Section2.1 Roadmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter2/section1.2.html">
+            
+                <a href="../chapter2/section1.2.html">
+            
+                    
+                    Section2.2 Batch Foundations: What and Where
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter2/summary0.html">
+            
+                <a href="../chapter2/summary0.html">
+            
+                    
+                    Going Streaming: When and How
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter2/summary.html">
+            
+                <a href="../chapter2/summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter3/">
+            
+                <a href="../chapter3/">
+            
+                    
+                    Chapter3  Watermarks
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter3/section1.html">
+            
+                <a href="../chapter3/section1.html">
+            
+                    
+                    Section3.1 Definition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter3/section2.html">
+            
+                <a href="../chapter3/section2.html">
+            
+                    
+                    Section3.2 Source Watermark Creation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter3/section3.html">
+            
+                <a href="../chapter3/section3.html">
+            
+                    
+                    Watermark Propagation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter3/section4.html">
+            
+                <a href="../chapter3/section4.html">
+            
+                    
+                    Percentile Watermarks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../chapter3/section5.html">
+            
+                <a href="../chapter3/section5.html">
+            
+                    
+                    Processing-Time Watermarks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../chapter3/section6.html">
+            
+                <a href="../chapter3/section6.html">
+            
+                    
+                    Case Studies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../chapter3/section7.html">
+            
+                <a href="../chapter3/section7.html">
+            
+                    
+                    Watermark Propagation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../chapter3/summary.md">
+            
+                <span>
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter4/">
+            
+                <a href="../chapter4/">
+            
+                    
+                    Chapter 4. Advanced Windowing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter4/section1.html">
+            
+                <a href="../chapter4/section1.html">
+            
+                    
+                    When/Where: Processing-Time Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter4/section2.html">
+            
+                <a href="../chapter4/section2.html">
+            
+                    
+                    Where: Session Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter4/section3.html">
+            
+                <a href="../chapter4/section3.html">
+            
+                    
+                    Where: Custom Windowing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../chapter4/summary.html">
+            
+                <a href="../chapter4/summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    Chapter5 Exactly-Once and Side Effects
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter5/section1.html">
+            
+                <a href="../chapter5/section1.html">
+            
+                    
+                    Why Exactly Once Matters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../chapter5/section2.html">
+            
+                <a href="../chapter5/section2.html">
+            
+                    
+                    Accuracy Versus Completeness
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../chapter5/section3.html">
+            
+                <a href="../chapter5/section3.html">
+            
+                    
+                    Ensuring Exactly Once in Shuffle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../chapter5/section4.html">
+            
+                <a href="../chapter5/section4.html">
+            
+                    
+                    Addressing Determinism
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../chapter5/section5.html">
+            
+                <a href="../chapter5/section5.html">
+            
+                    
+                    Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../chapter5/section6.html">
+            
+                <a href="../chapter5/section6.html">
+            
+                    
+                    Exactly Once in Sources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../chapter5/section7.html">
+            
+                <a href="../chapter5/section7.html">
+            
+                    
+                    Exactly Once in Sinks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../chapter5/section8.html">
+            
+                <a href="../chapter5/section8.html">
+            
+                    
+                    Use Cases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../chapter5/section8.html">
+            
+                <a href="../chapter5/section8.html">
+            
+                    
+                    Other Systems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../chapter5/section9.html">
+            
+                <a href="../chapter5/section9.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Chapter6 Streams and Tables
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="section1.html">
+            
+                <a href="section1.html">
+            
+                    
+                    Stream-and-Table Basics Or: a Special Theory of Stream and Table Relativity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8.2" data-path="section2.html">
+            
+                <a href="section2.html">
+            
+                    
+                    Batch Processing Versus Streams and Tables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="section3.html">
+            
+                <a href="section3.html">
+            
+                    
+                    What, Where, When, and How in a Streams and Tables World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="section4.html">
+            
+                <a href="section4.html">
+            
+                    
+                    A General Theory of Stream and Table Relativity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="section5.html">
+            
+                <a href="section5.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter7/">
+            
+                <a href="../chapter7/">
+            
+                    
+                    Chapter 7. The Practicalities of Persistent State
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chapter7/section1.html">
+            
+                <a href="../chapter7/section1.html">
+            
+                    
+                    Motivation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chapter7/section2.html">
+            
+                <a href="../chapter7/section2.html">
+            
+                    
+                    Implicit State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../chapter7/section3.html">
+            
+                <a href="../chapter7/section3.html">
+            
+                    
+                    Generalized State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../chapter7/section4.html">
+            
+                <a href="../chapter7/section4.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../chapter8/">
+            
+                <a href="../chapter8/">
+            
+                    
+                    Chapter 8. Streaming SQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../chapter8/section1.html">
+            
+                <a href="../chapter8/section1.html">
+            
+                    
+                    What Is Streaming SQL?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../chapter8/section2.html">
+            
+                <a href="../chapter8/section2.html">
+            
+                    
+                    Looking Backward: Stream and Table Biases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../chapter8/section3.html">
+            
+                <a href="../chapter8/section3.html">
+            
+                    
+                    Looking Forward: Toward Robust Streaming SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../chapter8/section4.html">
+            
+                <a href="../chapter8/section4.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../chapter9/">
+            
+                <a href="../chapter9/">
+            
+                    
+                    Chapter 9. Streaming Joins
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../chapter9/section2.html">
+            
+                <a href="../chapter9/section2.html">
+            
+                    
+                    All Your Joins Are Belong to Streaming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../chapter9/section3.html">
+            
+                <a href="../chapter9/section3.html">
+            
+                    
+                    Unwindowed Joins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../chapter9/section4.html">
+            
+                <a href="../chapter9/section4.html">
+            
+                    
+                    Windowed Joins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../chapter9/section5.html">
+            
+                <a href="../chapter9/section5.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../chapter10/">
+            
+                <a href="../chapter10/">
+            
+                    
+                    Chapter 10. The Evolution of Large-Scale Data Processing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../chapter10/section1.html">
+            
+                <a href="../chapter10/section1.html">
+            
+                    
+                    MapReduce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../chapter10/section2.html">
+            
+                <a href="../chapter10/section2.html">
+            
+                    
+                    Hadoop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../chapter10/section3.html">
+            
+                <a href="../chapter10/section3.html">
+            
+                    
+                    Flume
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../chapter10/section4.html">
+            
+                <a href="../chapter10/section4.html">
+            
+                    
+                    Storm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../chapter10/section5.html">
+            
+                <a href="../chapter10/section5.html">
+            
+                    
+                    Spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../chapter10/section6.html">
+            
+                <a href="../chapter10/section6.html">
+            
+                    
+                    MillWheel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../chapter10/section7.html">
+            
+                <a href="../chapter10/section7.html">
+            
+                    
+                    Kafaka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../chapter10/section8.html">
+            
+                <a href="../chapter10/section8.html">
+            
+                    
+                    CloudDataFlow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../chapter10/section9.html">
+            
+                <a href="../chapter10/section9.html">
+            
+                    
+                    Flink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="../chapter10/section9.html">
+            
+                <a href="../chapter10/section9.html">
+            
+                    
+                    Beam
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="../chapter10/section10.html">
+            
+                <a href="../chapter10/section10.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Batch Processing Versus Streams and Tables</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="batch-processing-versus-streams-and-tables">Batch Processing Versus Streams and Tables</h2>
+<p>With our proverbial knuckles now cracked, let&#x2019;s start to tie up some loose
+ends. To begin, we tackle the first one, regarding batch processing. At the
+end, we&#x2019;ll discover that the resolution to the second issue, regarding the</p>
+<pre><code>2
+</code></pre><p>relationship of streams to bounded and unbounded data, will fall out naturally
+from the answer for the first. Score one for serendipity.</p>
+<h2 id="a-streams-and-tables-analysis-of-mapreduce">A Streams and Tables Analysis of MapReduce</h2>
+<p>To keep our analysis relatively simple, but solidly concrete, as it were, let&#x2019;s
+look at how a traditional MapReduce job fits into the streams/tables world.
+As alluded to by its name, a MapReduce job superficially consists of two
+phases: Map and Reduce. For our purposes, though, it&#x2019;s useful to look a little
+deeper and treat it more like six:</p>
+<p>MapRead</p>
+<pre><code>This consumes the input data and preprocesses them a bit into a standard
+key/value form for mapping.
+</code></pre><p>Map</p>
+<pre><code>This repeatedly (and/or in parallel) consumes a single key/value pair
+from the preprocessed input and outputs zero or more key/value pairs.
+</code></pre><p>MapWrite</p>
+<pre><code>This clusters together sets of Map-phase output values having identical
+keys and writes those key/value-list groups to (temporary) persistent
+storage. In this way, the MapWrite phase is essentially a group-by-key-
+and-checkpoint operation.
+</code></pre><p>ReduceRead</p>
+<pre><code>This consumes the saved shuffle data and converts them into a standard
+key/value-list form for reduction.
+</code></pre><p>Reduce</p>
+<pre><code>This repeatedly (and/or in parallel) consumes a single key and its
+associated value-list of records and outputs zero or more records, all of
+which may optionally remain associated with that same key.
+</code></pre><p>ReduceWrite</p>
+<pre><code>3
+</code></pre><pre><code>This writes the outputs from the Reduce phase to the output datastore.
+</code></pre><p>Note that the MapWrite and ReduceRead phases sometimes are referred to in
+aggregate as the Shuffle phase, but for our purposes, it&#x2019;s better to consider
+them independently. It&#x2019;s perhaps also worth noting that the functions served
+by the MapRead and ReduceWrite phases are more commonly referred to
+these days as sources and sinks. Digressions aside, however, let&#x2019;s now see
+how this all relates to streams and tables.</p>
+<p><strong>Map as streams/tables</strong></p>
+<p>Because we start and end with static datasets, it should be clear that we
+begin with a table and end with a table. But what do we have in between?
+Naively, one might assume that it&#x2019;s tables all the way down; after all, batch
+processing is (conceptually) known to consume and produce tables. And if
+you think of a batch processing job as a rough analog of executing a classic
+SQL query, that feels relatively natural. But let&#x2019;s look a little more closely at
+what&#x2019;s really happening, step by step.</p>
+<p>First up, MapRead consumes a table and produces <em>something</em>. That
+something is consumed next by the Map phase, so if we want to understand
+its nature, a good place to start would be with the Map phase API, which
+looks something like this in Java:</p>
+<pre><code>void map(KI key, VI value, Emit&lt;KO, VO&gt; emitter);
+</code></pre><p>The map call will be repeatedly invoked for each key/value pair in the input
+table. If you think this sounds suspiciously like the input table is being
+consumed as a stream of records, you&#x2019;d be right. We look more closely at
+how the table is being converted into a stream later, but for now, suffice it to
+say that the MapRead phase is iterating over the data at rest in the input table
+and putting them into motion in the form of a stream that is then consumed
+by the Map phase.</p>
+<p>Next up, the Map phase consumes that stream, and then does what? Because
+the map operation is an element-wise transformation, it&#x2019;s not doing anything
+that will halt the moving elements and put them to rest. It might change the</p>
+<pre><code>4
+</code></pre><p>effective cardinality of the stream by either filtering some elements out or
+exploding some elements into multiple elements, but those elements all
+remain independent from one another after the Map phase concludes. So, it
+seems safe to say that the Map phase both consumes a stream as well as
+produces a stream.</p>
+<p>After the Map phase is done, we enter the MapWrite phase. As I noted
+earlier, the MapWrite groups records by key and then writes them in that
+format to persistent storage. The <em>persistent</em> part of the write actually isn&#x2019;t
+strictly necessary at this point as long as there&#x2019;s persistence <em>somewhere</em> (i.e.,
+if the upstream inputs are saved and one can recompute the intermediate
+results from them in cases of failure, similar to the approach Spark takes with
+Resilient Distributed Datasets [RDDs]). What <em>is</em> important is that the records
+are grouped together into some kind of datastore, be it in memory, on disk, or
+what have you. This is important because, as a result of this grouping
+operation, records that were previously flying past one-by-one in the stream
+are now brought to rest in a location dictated by their key, thus allowing per-
+key groups to accumulate as their like-keyed brethren and sistren arrive. Note
+how similar this is to the definition of stream-to-table conversion provided
+earlier: <em>the aggregation of a stream of updates over time yields a table</em>. The
+MapWrite phase, by virtue of grouping the stream of records by their keys,
+has put those data to rest and thus converted the stream back into a table.
+Cool!</p>
+<p>We&#x2019;re now halfway through the MapReduce, so, using Figure 6-1, let&#x2019;s recap
+what we&#x2019;ve seen so far.</p>
+<p>We&#x2019;ve gone from table to stream and back again across three operations.
+MapRead converted the table into a stream, which was then transformed into
+a new stream by Map (via the user&#x2019;s code), which was then converted back
+into a table by MapWrite. We&#x2019;re going to find that the next three operations
+in the MapReduce look very similar, so I&#x2019;ll go through them more quickly,
+but I still want to point out one important detail along the way.</p>
+<pre><code>5
+</code></pre><p><em>Figure 6-1. Map phases in a MapReduce. Data in a table are converted to a stream and
+back again.</em></p>
+<p><strong>Reduce as streams/tables</strong></p>
+<p>Picking up where we left off after the MapWrite phase, ReduceRead itself is
+relatively uninteresting. It&#x2019;s basically identical to MapRead, except that the
+values being read are singleton lists of values instead of singleton values,
+because the data stored by MapWrite were key/value-list pairs. But it&#x2019;s still
+just iterating over a snapshot of a table to convert it into a stream. Nothing
+new here.</p>
+<p>And even though it <em>sounds</em> like it might be interesting, Reduce in this context
+is really just a glorified Map phase that happens to receive a list of values for
+each key instead of a single value. So it&#x2019;s still just mapping single
+(composite) records into zero or more new records. Nothing particularly new
+here, either.</p>
+<p>ReduceWrite is the one that&#x2019;s a bit noteworthy. We know already that this
+phase must convert a stream to a table, given that Reduce produces a stream
+and the final output is a table. But how does that happen? If I told you it was
+a direct result of key-grouping the outputs from the previous phase into
+persistent storage, just like we saw with MapWrite, you might believe me,
+until you remembered that I noted earlier that key-association was an
+<em>optional</em> feature of the Reduce phase. With that feature enabled, ReduceWrite
+<em>is</em> essentially identical to MapWrite. But if that feature is disabled and the
+outputs from Reduce have no associated keys, what exactly is happening to
+bring those data to rest?</p>
+<p>To understand what&#x2019;s going on, it&#x2019;s useful to think again of the semantics of a
+SQL table. Though often recommended, it&#x2019;s not strictly required for a SQL
+table to have a primary key uniquely identifying each row. In the case of
+keyless tables, each row that is inserted is considered to be a new,
+independent row (even if the data therein are identical to one or more extant
+rows in the table), much as though there were an implicit
+AUTO_INCREMENT field being used as the key (which incidentally, is
+what&#x2019;s effectively happening under the covers in most implementations, even
+though the &#x201C;key&#x201D; in this case might just be some physical block location that
+is never exposed or expected to be used as a logical identifier). This implicit
+unique key assignment is precisely what&#x2019;s happening in ReduceWrite with</p>
+<pre><code>6
+</code></pre><p>unkeyed data. Conceptually, there&#x2019;s still a group-by-key operation
+happening; that&#x2019;s what brings the data to rest. But lacking a user-supplied
+key, the ReduceWrite is treating each record as though it has a new, never-
+before-seen key, and effectively grouping each record with itself, resulting
+again in data at rest.</p>
+<p>Take a look at Figure 6-2, which shows the entire pipeline from the
+perspective of stream/tables. You can see that it&#x2019;s a sequence of TABLE &#x2192;
+STREAM &#x2192; STREAM &#x2192; TABLE &#x2192; STREAM &#x2192; STREAM &#x2192; TABLE.
+Even though we&#x2019;re processing bounded data and even though we&#x2019;re doing
+what we traditionally think of as batch processing, it&#x2019;s really just streams and
+tables under the covers.</p>
+<pre><code>7
+</code></pre><p><em>Figure 6-2. Map and Reduce phases in a MapReduce, viewed from the perspective of
+streams and tables</em></p>
+<h2 id="reconciling-with-batch-processing">Reconciling with Batch Processing</h2>
+<p>So where does this leave us with respect to our first two questions?</p>
+<pre><code>1. Q: How does batch processing fit into stream/table theory?
+A: Quite nicely. The basic pattern is as follows:
+</code></pre><pre><code>a. Tables are read in their entirety to become streams.
+</code></pre><pre><code>b. Streams are processed into new streams until a grouping
+operation is hit.
+</code></pre><pre><code>c. Grouping turns the stream into a table.
+d. Steps a through c repeat until you run out of stages in the
+pipeline.
+</code></pre><pre><code>2. Q: How do streams relate to bounded/unbounded data?
+A: As we can see from the MapReduce example, streams are simply
+the in-motion form of data, regardless of whether they&#x2019;re bounded or
+unbounded.
+</code></pre><p>Taken from this perspective, it&#x2019;s easy to see that stream/table theory isn&#x2019;t
+remotely at odds with batch processing of bounded data. In fact, it only
+further supports the idea I&#x2019;ve been harping on that batch and streaming really
+aren&#x2019;t that different: at the end of the of day, it&#x2019;s streams and tables all the
+way down.</p>
+<p>With that, we&#x2019;re well on our way toward a general theory of streams and
+tables. But to wrap things up cleanly, we last need to revisit the four
+<em>what</em> / <em>where</em> / <em>when</em> / <em>how</em> questions within the streams/tables context, to see how
+they all relate.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="section1.html" class="navigation navigation-prev " aria-label="Previous page: Stream-and-Table Basics Or: a Special Theory of Stream and Table Relativity">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="section3.html" class="navigation navigation-next " aria-label="Next page: What, Where, When, and How in a Streams and Tables World">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Batch Processing Versus Streams and Tables","level":"1.8.2","depth":2,"next":{"title":"What, Where, When, and How in a Streams and Tables World","level":"1.8.3","depth":2,"path":"chapter6/section3.md","ref":"chapter6/section3.md","articles":[]},"previous":{"title":"Stream-and-Table Basics Or: a Special Theory of Stream and Table Relativity","level":"1.8.1","depth":2,"path":"chapter6/section1.md","ref":"chapter6/section1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter6/section2.md","mtime":"2019-10-27T13:09:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-03T07:23:23.538Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

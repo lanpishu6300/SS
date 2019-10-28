@@ -1,0 +1,1692 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>What Is Streaming SQL? · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="section2.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../INTRODUCTION.html">
+            
+                <a href="../INTRODUCTION.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    Chapter1 Streaming 101
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter1/section1.1.html">
+            
+                <a href="../chapter1/section1.1.html">
+            
+                    
+                    Section1.1 Terminology: What Is Streaming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter1/section1.2.html">
+            
+                <a href="../chapter1/section1.2.html">
+            
+                    
+                    Section1.2 Data Processing Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter1/summary.html">
+            
+                <a href="../chapter1/summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    Chapter2 The What, Where,When, and How of Data Processing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter1/section1.1.html">
+            
+                <a href="../chapter1/section1.1.html">
+            
+                    
+                    Section2.1 Roadmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter2/section1.2.html">
+            
+                <a href="../chapter2/section1.2.html">
+            
+                    
+                    Section2.2 Batch Foundations: What and Where
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter2/summary0.html">
+            
+                <a href="../chapter2/summary0.html">
+            
+                    
+                    Going Streaming: When and How
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter2/summary.html">
+            
+                <a href="../chapter2/summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter3/">
+            
+                <a href="../chapter3/">
+            
+                    
+                    Chapter3  Watermarks
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter3/section1.html">
+            
+                <a href="../chapter3/section1.html">
+            
+                    
+                    Section3.1 Definition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter3/section2.html">
+            
+                <a href="../chapter3/section2.html">
+            
+                    
+                    Section3.2 Source Watermark Creation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter3/section3.html">
+            
+                <a href="../chapter3/section3.html">
+            
+                    
+                    Watermark Propagation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter3/section4.html">
+            
+                <a href="../chapter3/section4.html">
+            
+                    
+                    Percentile Watermarks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../chapter3/section5.html">
+            
+                <a href="../chapter3/section5.html">
+            
+                    
+                    Processing-Time Watermarks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../chapter3/section6.html">
+            
+                <a href="../chapter3/section6.html">
+            
+                    
+                    Case Studies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../chapter3/section7.html">
+            
+                <a href="../chapter3/section7.html">
+            
+                    
+                    Watermark Propagation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../chapter3/summary.md">
+            
+                <span>
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter4/">
+            
+                <a href="../chapter4/">
+            
+                    
+                    Chapter 4. Advanced Windowing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter4/section1.html">
+            
+                <a href="../chapter4/section1.html">
+            
+                    
+                    When/Where: Processing-Time Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter4/section2.html">
+            
+                <a href="../chapter4/section2.html">
+            
+                    
+                    Where: Session Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter4/section3.html">
+            
+                <a href="../chapter4/section3.html">
+            
+                    
+                    Where: Custom Windowing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../chapter4/summary.html">
+            
+                <a href="../chapter4/summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    Chapter5 Exactly-Once and Side Effects
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter5/section1.html">
+            
+                <a href="../chapter5/section1.html">
+            
+                    
+                    Why Exactly Once Matters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../chapter5/section2.html">
+            
+                <a href="../chapter5/section2.html">
+            
+                    
+                    Accuracy Versus Completeness
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../chapter5/section3.html">
+            
+                <a href="../chapter5/section3.html">
+            
+                    
+                    Ensuring Exactly Once in Shuffle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../chapter5/section4.html">
+            
+                <a href="../chapter5/section4.html">
+            
+                    
+                    Addressing Determinism
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../chapter5/section5.html">
+            
+                <a href="../chapter5/section5.html">
+            
+                    
+                    Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../chapter5/section6.html">
+            
+                <a href="../chapter5/section6.html">
+            
+                    
+                    Exactly Once in Sources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../chapter5/section7.html">
+            
+                <a href="../chapter5/section7.html">
+            
+                    
+                    Exactly Once in Sinks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../chapter5/section8.html">
+            
+                <a href="../chapter5/section8.html">
+            
+                    
+                    Use Cases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../chapter5/section8.html">
+            
+                <a href="../chapter5/section8.html">
+            
+                    
+                    Other Systems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../chapter5/section9.html">
+            
+                <a href="../chapter5/section9.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter6/">
+            
+                <a href="../chapter6/">
+            
+                    
+                    Chapter6 Streams and Tables
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chapter6/section1.html">
+            
+                <a href="../chapter6/section1.html">
+            
+                    
+                    Stream-and-Table Basics Or: a Special Theory of Stream and Table Relativity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../chapter6/section2.html">
+            
+                <a href="../chapter6/section2.html">
+            
+                    
+                    Batch Processing Versus Streams and Tables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../chapter6/section3.html">
+            
+                <a href="../chapter6/section3.html">
+            
+                    
+                    What, Where, When, and How in a Streams and Tables World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../chapter6/section4.html">
+            
+                <a href="../chapter6/section4.html">
+            
+                    
+                    A General Theory of Stream and Table Relativity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../chapter6/section5.html">
+            
+                <a href="../chapter6/section5.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter7/">
+            
+                <a href="../chapter7/">
+            
+                    
+                    Chapter 7. The Practicalities of Persistent State
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chapter7/section1.html">
+            
+                <a href="../chapter7/section1.html">
+            
+                    
+                    Motivation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chapter7/section2.html">
+            
+                <a href="../chapter7/section2.html">
+            
+                    
+                    Implicit State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../chapter7/section3.html">
+            
+                <a href="../chapter7/section3.html">
+            
+                    
+                    Generalized State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../chapter7/section4.html">
+            
+                <a href="../chapter7/section4.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Chapter 8. Streaming SQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.10.1" data-path="section1.html">
+            
+                <a href="section1.html">
+            
+                    
+                    What Is Streaming SQL?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="section2.html">
+            
+                <a href="section2.html">
+            
+                    
+                    Looking Backward: Stream and Table Biases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="section3.html">
+            
+                <a href="section3.html">
+            
+                    
+                    Looking Forward: Toward Robust Streaming SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="section4.html">
+            
+                <a href="section4.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../chapter9/">
+            
+                <a href="../chapter9/">
+            
+                    
+                    Chapter 9. Streaming Joins
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../chapter9/section2.html">
+            
+                <a href="../chapter9/section2.html">
+            
+                    
+                    All Your Joins Are Belong to Streaming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../chapter9/section3.html">
+            
+                <a href="../chapter9/section3.html">
+            
+                    
+                    Unwindowed Joins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../chapter9/section4.html">
+            
+                <a href="../chapter9/section4.html">
+            
+                    
+                    Windowed Joins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../chapter9/section5.html">
+            
+                <a href="../chapter9/section5.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../chapter10/">
+            
+                <a href="../chapter10/">
+            
+                    
+                    Chapter 10. The Evolution of Large-Scale Data Processing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../chapter10/section1.html">
+            
+                <a href="../chapter10/section1.html">
+            
+                    
+                    MapReduce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../chapter10/section2.html">
+            
+                <a href="../chapter10/section2.html">
+            
+                    
+                    Hadoop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../chapter10/section3.html">
+            
+                <a href="../chapter10/section3.html">
+            
+                    
+                    Flume
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../chapter10/section4.html">
+            
+                <a href="../chapter10/section4.html">
+            
+                    
+                    Storm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../chapter10/section5.html">
+            
+                <a href="../chapter10/section5.html">
+            
+                    
+                    Spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../chapter10/section6.html">
+            
+                <a href="../chapter10/section6.html">
+            
+                    
+                    MillWheel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../chapter10/section7.html">
+            
+                <a href="../chapter10/section7.html">
+            
+                    
+                    Kafaka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../chapter10/section8.html">
+            
+                <a href="../chapter10/section8.html">
+            
+                    
+                    CloudDataFlow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../chapter10/section9.html">
+            
+                <a href="../chapter10/section9.html">
+            
+                    
+                    Flink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="../chapter10/section9.html">
+            
+                <a href="../chapter10/section9.html">
+            
+                    
+                    Beam
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="../chapter10/section10.html">
+            
+                <a href="../chapter10/section10.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >What Is Streaming SQL?</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="what-is-streaming-sql">What Is Streaming SQL?</h2>
+<p>I would argue that the answer to this question has eluded our industry for
+decades. In all fairness, the database community has understood maybe 99%
+of the answer for quite a while now. But I have yet to see a truly cogent and
+comprehensive definition of streaming SQL that encompasses the full breadth
+of robust streaming semantics. That&#x2019;s what we&#x2019;ll try to come up with here,
+although it would be hubris to assume we&#x2019;re 100% of the way there now.
+Maybe 99.1%? Baby steps.</p>
+<p>Regardless, I want to point out up front that most of what we&#x2019;ll discuss in this
+chapter is still purely hypothetical as of the time of writing. This chapter and
+the one that follows (covering streaming joins) both describe an idealistic
+vision for what streaming SQL could be. Some pieces are already
+implemented in systems like Apache Calcite, Apache Flink, and Apache
+Beam. Many others aren&#x2019;t implemented anywhere. Along the way, I&#x2019;ll try to
+call out a few of the things that do exist in concrete form, but given what a
+moving target that is, your best bet is to simply consult the documentation for
+your specific system of interest.</p>
+<p>On that note, it&#x2019;s also worth highlighting that the vision for streaming SQL
+presented here is the result of a collaborative discussion between the Calcite,
+Flink, and Beam communities. Julian Hyde, the lead developer on Calcite,</p>
+<p>has long pitched his vision for what streaming SQL might look like. In 2016,
+members of the Flink community integrated Calcite SQL support into Flink
+itself, and began adding streaming-specific features such as windowing
+constructs to the Calcite SQL dialect. Then, in 2017, all three communities
+began a discussion to try to come to agreement on what language extensions
+and semantics for robust stream processing in Calcite SQL should look like.
+This chapter attempts to distill the ideas from that discussion down into a
+clear and cohesive narrative about integrating streaming concepts into SQL,
+regardless of whether it&#x2019;s Calcite or some other dialect.</p>
+<h2 id="relational-algebra">Relational Algebra</h2>
+<p>When talking about what streaming means for SQL, it&#x2019;s important to keep in
+mind the theoretical foundation of SQL: relational algebra. Relational algebra
+is simply a mathematical way of describing relationships between data that
+consist of named, typed tuples. At the heart of relational algebra is the
+relation itself, which is a set of these tuples. In classic database terms, a
+relation is something akin to a table, be it a physical database table, the result
+of a SQL query, a view (materialized or otherwise), and so on; it&#x2019;s a set of
+rows containing named and typed columns of data.</p>
+<p>One of the more critical aspects of relational algebra is its closure property:
+applying any operator from the relational algebra to any valid relation
+always yields another relation. In other words, relations are the common
+currency of relational algebra, and all operators consume them as input and
+produce them as output.</p>
+<p>Historically, many attempts to support streaming in SQL have fallen short of
+satisfying the closure property. They treat streams separately from classic
+relations, providing new operators to convert between the two, and restricting
+the operations that can be applied to one or the other. This significantly raises
+the bar of adoption for any such streaming SQL system: would-be users must
+learn the new operators and understand the places where they&#x2019;re applicable,
+where they aren&#x2019;t, and similarly relearn the rules of applicability in this new
+world for any old operators. What&#x2019;s worse, most of these systems still fall</p>
+<pre><code>1
+</code></pre><p>short of providing the full suite of streaming semantics that we would want,
+such as support for robust out-of-order processing and strong temporal join
+support (the latter of which we cover in Chapter 9). As a result, I would argue
+that it&#x2019;s basically impossible to name any existing streaming SQL
+implementation that has achieved truly broad adoption. The additional
+cognitive overhead and restricted capabilities of such streaming SQL systems
+have ensured that they remain a niche enterprise.</p>
+<p>To change that, to truly bring streaming SQL to the forefront, what we need
+is a way for streaming to become a first-class citizen within the relational
+algebra itself, such that the entire standard relational algebra can apply
+naturally in both streaming and nonstreaming use cases. That isn&#x2019;t to say that
+streams and tables should be treated as exactly the same thing; they most
+definitely are not the same, and recognizing that fact lends clarity to
+understanding and power to navigating the stream/table relationship, as we&#x2019;ll
+see shortly. But the core algebra should apply cleanly and naturally to both
+worlds, with minimal extensions beyond the standard relational algebra only
+in the cases where absolutely necessary.</p>
+<h2 id="time-varying-relations">Time-Varying Relations</h2>
+<p>To cut to the chase, the punchline I referred to at the beginning of the chapter
+is this: the key to naturally integrating streaming into SQL is to extend
+relations, the core data objects of relational algebra, to represent a set of data
+<em>over time</em> rather than a set of data at a <em>specific point</em> in time. More succinctly,
+instead of <em>point-in-time</em> relations, we need <em>time-varying relations</em>.</p>
+<p>But what are time-varying relations? Let&#x2019;s first define them in terms of
+classic relational algebra, after which we&#x2019;ll also consider their relationship to
+stream and table theory.</p>
+<p>In terms of relational algebra, a time-varying relation is really just the
+evolution of a classic relation over time. To understand what I mean by that,
+imagine a raw dataset consisting of user events. Over time, as users generate
+new events, the dataset continues to grow and evolve. If you observe that set
+at a specific point in time, that&#x2019;s a classic relation. But if you observe the</p>
+<pre><code>2
+</code></pre><p>holistic evolution of the set <em>over time</em> , that&#x2019;s a time-varying relation.</p>
+<p>Put differently, if classic relations are like two-dimensional tables consisting
+of named, typed columns in the x-axis and rows of records in the y-axis,
+time-varying relations are like three-dimensional tables with x- and y-axes as
+before, but an additional z-axis capturing different versions of the two-
+dimensional table over time. As the relation changes, new snapshots of the
+relation are added in the z dimension.</p>
+<p>Let&#x2019;s look at an example. Imagine our raw dataset is users and scores; for
+example, per-user scores from a mobile game as in most of the other
+examples throughout the book. And suppose that our example dataset here
+ultimately ends up looking like this when observed at a specific point in time,
+in this case 12:07:</p>
+<pre><code>-------------------------
+| Name | Score | Time |
+-------------------------
+| Julie | 7 | 12:01 |
+| Frank | 3 | 12:03 |
+| Julie | 1 | 12:03 |
+| Julie | 4 | 12:07 |
+-------------------------
+</code></pre><p>In other words, it recorded the arrivals of four scores over time: Julie&#x2019;s score
+of 7 at 12:01, both Frank&#x2019;s score of 3 and Julie&#x2019;s second score of 1 at 12:03,
+and, finally, Julie&#x2019;s third score of 4 at 12:07 (note that the Time column here
+contains processing-time timestamps representing the <em>arrival time</em> of the
+records within the system; we get into event-time timestamps a little later on).
+Assuming these were the only data to ever arrive for this relation, it would
+look like the preceding table any time we observed it after 12:07. But if
+instead we had observed the relation at 12:01, it would have looked like the
+following, because only Julie&#x2019;s first score would have arrived by that point:</p>
+<pre><code>-------------------------
+| Name | Score | Time |
+</code></pre><pre><code>-------------------------
+| Julie | 7 | 12:01 |
+-------------------------
+</code></pre><p>If we had then observed it again at 12:03, Frank&#x2019;s score and Julie&#x2019;s second
+score would have also arrived, so the relation would have evolved to look
+like this:</p>
+<pre><code>-------------------------
+| Name | Score | Time |
+-------------------------
+| Julie | 7 | 12:01 |
+| Frank | 3 | 12:03 |
+| Julie | 1 | 12:03 |
+-------------------------
+</code></pre><p>From this example we can begin to get a sense for what the <em>time-varying</em>
+relation for this dataset must look like: it would capture the entire evolution
+of the relation over time. Thus, if we observed the time-varying relation (or
+TVR) at or after 12:07, it would thus look like the following (note the use of</p>
+<p>a hypothetical TVR keyword to signal that we want the query to return the full
+time-varying relation, not the standard point-in-time snapshot of a classic
+relation):</p>
+<pre><code>---------------------------------------------------------
+| [-inf, 12:01) | [12:01, 12:03) |
+| ------------------------- | ------------------------- |
+| | Name | Score | Time | | | Name | Score | Time | |
+| ------------------------- | ------------------------- |
+| | | | | | | Julie | 7 | 12:01 | |
+| | | | | | | | | | |
+| | | | | | | | | | |
+| | | | | | | | | | |
+| ------------------------- | ------------------------- |
+---------------------------------------------------------
+| [12:03, 12:07) | [12:07, now) |
+| ------------------------- | ------------------------- |
+</code></pre><pre><code>| | Name | Score | Time | | | Name | Score | Time | |
+| ------------------------- | ------------------------- |
+| | Julie | 7 | 12:01 | | | Julie | 7 | 12:01 | |
+| | Frank | 3 | 12:03 | | | Frank | 3 | 12:03 | |
+| | Julie | 1 | 12:03 | | | Julie | 1 | 12:03 | |
+| | | | | | | Julie | 4 | 12:07 | |
+| ------------------------- | ------------------------- |
+---------------------------------------------------------
+</code></pre><p>Because the printed/digital page remains constrained to two dimensions, I&#x2019;ve
+taken the liberty of flattening the third dimension into a grid of two-
+dimensional relations. But you can see how the time-varying relation
+essentially consists of a sequence of classic relations (ordered left to right, top
+to bottom), each capturing the full state of the relation for a specific range of
+time (all of which, by definition, are contiguous).</p>
+<p>What&#x2019;s important about defining time-varying relations this way is that they
+really are, for all intents and purposes, just a sequence of classic relations that
+each exist independently within their own disjointed (but adjacent) time
+ranges, with each range capturing a period of time during which the relation
+did not change. This is important, because it means that the application of a
+relational operator to a time-varying relation is equivalent to individually
+applying that operator to each classic relation in the corresponding sequence.
+And taken one step further, the result of individually applying a relational
+operator to a sequence of relations, each associated with a time interval, will
+always yield a corresponding sequence of relations with the same time
+intervals. In other words, the result is a corresponding time-varying relation.
+This definition gives us two very important properties:</p>
+<pre><code>The full set of operators from classic relational algebra remain valid
+when applied to time-varying relations, and furthermore continue to
+behave exactly as you&#x2019;d expect.
+</code></pre><pre><code>The closure property of relational algebra remains intact when
+applied to time-varying relations.
+</code></pre><p>Or more succinctly, <em>all the rules of classic relational algebra continue to
+hold when applied to time-varying relations</em>. This is huge, because it means</p>
+<p>that our substitution of time-varying relations for classic relations hasn&#x2019;t
+altered the parameters of the game in any way. Everything continues to work
+the way it did back in classic relational land, just on sequences of classic
+relations instead of singletons. Going back to our examples, consider two
+more time-varying relations over our raw dataset, both observed at some time
+after 12:07. First a simple filtering relation using a WHERE clause:</p>
+<pre><code>---------------------------------------------------------
+| [-inf, 12:01) | [12:01, 12:03) |
+| ------------------------- | ------------------------- |
+| | Name | Score | Time | | | Name | Score | Time | |
+| ------------------------- | ------------------------- |
+| | | | | | | Julie | 7 | 12:01 | |
+| | | | | | | | | | |
+| | | | | | | | | | |
+| ------------------------- | ------------------------- |
+---------------------------------------------------------
+| [12:03, 12:07) | [12:07, now) |
+| ------------------------- | ------------------------- |
+| | Name | Score | Time | | | Name | Score | Time | |
+| ------------------------- | ------------------------- |
+| | Julie | 7 | 12:01 | | | Julie | 7 | 12:01 | |
+| | Julie | 1 | 12:03 | | | Julie | 1 | 12:03 | |
+| | | | | | | Julie | 4 | 12:07 | |
+| ------------------------- | ------------------------- |
+---------------------------------------------------------
+</code></pre><p>As you would expect, this relation looks a lot like the preceding one, but with
+Frank&#x2019;s scores filtered out. Even though the time-varying relation captures
+the added dimension of time necessary to record the evolution of this dataset
+over time, the query behaves exactly as you would expect, given your
+understanding of SQL.</p>
+<p>For something a little more complex, let&#x2019;s consider a grouping relation in
+which we&#x2019;re summing up all the per-user scores to generate a total overall
+score for each user:</p>
+<pre><code>---------------------------------------------------------
+| [-inf, 12:01) | [12:01, 12:03) |
+| ------------------------- | ------------------------- |
+| | Name | Total | Time | | | Name | Total | Time | |
+| ------------------------- | ------------------------- |
+| | | | | | | Julie | 7 | 12:01 | |
+| | | | | | | | | | |
+| ------------------------- | ------------------------- |
+---------------------------------------------------------
+| [12:03, 12:07) | [12:07, now) |
+| ------------------------- | ------------------------- |
+| | Name | Total | Time | | | Name | Total | Time | |
+| ------------------------- | ------------------------- |
+| | Julie | 8 | 12:03 | | | Julie | 12 | 12:07 | |
+| | Frank | 3 | 12:03 | | | Frank | 3 | 12:03 | |
+| ------------------------- | ------------------------- |
+---------------------------------------------------------
+</code></pre><p>Again, the time-varying version of this query behaves exactly as you would
+expect, with each classic relation in the sequence simply containing the sum
+of the scores for each user. And indeed, no matter how complicated a query
+we might choose, the results are always identical to applying that query
+independently to the commensurate classic relations composing the input
+time-varying relation. I cannot stress enough how important this is!</p>
+<p>All right, that&#x2019;s all well and good, but time-varying relations themselves are
+more of a theoretical construct than a practical, physical manifestation of
+data; it&#x2019;s pretty easy to see how they could grow to be quite huge and
+unwieldy for large datasets that change frequently. To see how they actually
+tie into real-world stream processing, let&#x2019;s now explore the relationship
+between time-varying relations and stream and table theory.</p>
+<h2 id="streams-and-tables">Streams and Tables</h2>
+<p>For this comparison, let&#x2019;s consider again our grouped time-varying relation
+that we looked at earlier:</p>
+<pre><code>---------------------------------------------------------
+| [-inf, 12:01) | [12:01, 12:03) |
+| ------------------------- | ------------------------- |
+| | Name | Total | Time | | | Name | Total | Time | |
+| ------------------------- | ------------------------- |
+| | | | | | | Julie | 7 | 12:01 | |
+| | | | | | | | | | |
+| ------------------------- | ------------------------- |
+---------------------------------------------------------
+| [12:03, 12:07) | [12:07, now) |
+| ------------------------- | ------------------------- |
+| | Name | Total | Time | | | Name | Total | Time | |
+| ------------------------- | ------------------------- |
+| | Julie | 8 | 12:03 | | | Julie | 12 | 12:07 | |
+| | Frank | 3 | 12:03 | | | Frank | 3 | 12:03 | |
+| ------------------------- | ------------------------- |
+---------------------------------------------------------
+</code></pre><p>We understand that this sequence captures the full history of the relation over
+time. Given our understanding of tables and streams from Chapter 6, it&#x2019;s not
+too difficult to understand how time-varying relations relate to stream and
+table theory.</p>
+<p>Tables are quite straightforward: because a time-varying relation is
+essentially a sequence of classic relations (each capturing a snapshot of the
+relation at a specific point in time), and classic relations are analogous to
+tables, observing a time-varying relation as a table simply yields the point-in-
+time relation snapshot for the time of observation.</p>
+<p>For example, if we were to observe the previous grouped time-varying
+relation as a table at 12:01, we&#x2019;d get the following (note the use of another
+hypothetical keyword, TABLE, to explicitly call out our desire for the query to
+return a table):</p>
+<pre><code>-------------------------
+| Name | Total | Time |
+-------------------------
+| Julie | 7 | 12:01 |
+-------------------------
+</code></pre><p>And observing at 12:07 would yield the expected:</p>
+<pre><code>-------------------------
+| Name | Total | Time |
+-------------------------
+| Julie | 12 | 12:07 |
+| Frank | 3 | 12:03 |
+-------------------------
+</code></pre><p>What&#x2019;s particularly interesting here is that there&#x2019;s actually support for the
+idea of time-varying relations within SQL, even as it exists today. The SQL
+2011 standard provides &#x201C;temporal tables,&#x201D; which store a versioned history of
+the table over time (in essence, time-varying relations) as well an AS OF
+SYSTEM TIME construct that allows you to explicitly query and receive a
+snapshot of the temporal table/time-varying relation at whatever point in time
+you specified. For example, even if we performed our query at 12:07, we
+could still see what the relation looked like back at 12:03:</p>
+<pre><code>-------------------------
+| Name | Total | Time |
+-------------------------
+| Julie | 8 | 12:03 |
+| Frank | 3 | 12:03 |
+-------------------------
+</code></pre><p>So there&#x2019;s some amount of precedent for time-varying relations in SQL</p>
+<p>already. But I digress. The main point here is that tables capture a snapshot of
+the time-varying relation at a specific point in time. Most real-world table
+implementations simply track real time as we observe it; others maintain
+some additional historical information, which in the limit is equivalent to a
+full-fidelity time-varying relation capturing the entire history of a relation
+over time.</p>
+<p>Streams are slightly different beasts. We learned in Chapter 6 that they too
+capture the evolution of a table over time. But they do so somewhat
+differently than the time-varying relations we&#x2019;ve looked at so far. Instead of
+holistically capturing snapshots of the entire relation each time it changes,
+they capture the <em>sequence of changes</em> that result in those snapshots within a
+time-varying relation. The subtle difference here becomes more evident with
+an example.</p>
+<p>As a refresher, recall again our baseline example TVR query:</p>
+<pre><code>---------------------------------------------------------
+| [-inf, 12:01) | [12:01, 12:03) |
+| ------------------------- | ------------------------- |
+| | Name | Total | Time | | | Name | Total | Time | |
+| ------------------------- | ------------------------- |
+| | | | | | | Julie | 7 | 12:01 | |
+| | | | | | | | | | |
+| ------------------------- | ------------------------- |
+---------------------------------------------------------
+| [12:03, 12:07) | [12:07, now) |
+| ------------------------- | ------------------------- |
+| | Name | Total | Time | | | Name | Total | Time | |
+| ------------------------- | ------------------------- |
+| | Julie | 8 | 12:03 | | | Julie | 12 | 12:07 | |
+| | Frank | 3 | 12:03 | | | Frank | 3 | 12:03 | |
+| ------------------------- | ------------------------- |
+---------------------------------------------------------
+</code></pre><p>Let&#x2019;s now observe our time-varying relation as a stream as it exists at a few</p>
+<p>distinct points in time. At each step of the way, we&#x2019;ll compare the original
+table rendering of the TVR at that point in time with the evolution of the
+stream up to that point. To see what stream renderings of our time-varying
+relation look like, we&#x2019;ll need to introduce two new hypothetical keywords:</p>
+<pre><code>A STREAM keyword, similar to the TABLE keyword I&#x2019;ve already
+introduced, that indicates we want our query to return an event-by-
+event stream capturing the evolution of the time-varying relation
+over time. You can think of this as applying a per-record trigger to
+the relation over time.
+</code></pre><pre><code>A special Sys.Undo column that can be referenced from a STREAM
+query, for the sake of identifying rows that are retractions. More on
+this in a moment.
+</code></pre><p>Thus, starting out from 12:01, we&#x2019;d have the following:</p>
+<pre><code>------------------------- -----------------------------
+---
+| Name | Total | Time | | Name | Total | Time |
+Undo |
+------------------------- -----------------------------
+---
+| Julie | 7 | 12:01 | | Julie | 7 | 12:01 |
+|
+------------------------- ........ [12:01, 12:01]
+........
+</code></pre><p>The table and stream renderings look almost identical at this point. Mod the</p>
+<pre><code>3
+</code></pre><p>Undo column (discussed in more detail in the next example), there&#x2019;s only one
+difference: whereas the table version is complete as of 12:01 (signified by the
+final line of dashes closing off the bottom end of the relation), the stream
+version remains incomplete, as signified by the final ellipsis-like line of
+periods marking both the open tail of the relation (where additional data
+might be forthcoming in the future) as well as the processing-time range of
+data observed so far. And indeed, if executed on a real implementation, the
+STREAM query would wait indefinitely for additional data to arrive. Thus, if</p>
+<p>we waited until 12:03, three new rows would show up for the STREAM query.
+Compare that to a fresh TABLE rendering of the TVR at 12:03:</p>
+<pre><code>------------------------- -----------------------------
+---
+| Name | Total | Time | | Name | Total | Time |
+Undo |
+------------------------- -----------------------------
+---
+| Julie | 8 | 12:03 | | Julie | 7 | 12:01 |
+|
+| Frank | 3 | 12:03 | | Frank | 3 | 12:03 |
+|
+------------------------- | Julie | 7 | 12:03 |
+undo |
+| Julie | 8 | 12:03 |
+|
+........ [12:01, 12:03]
+........
+</code></pre><p>Here&#x2019;s an interesting point worth addressing: why are there <em>three</em> new rows in</p>
+<p>the stream (Frank&#x2019;s 3 and Julie&#x2019;s undo-7 and 8) when our original dataset
+contained only <em>two</em> rows (Frank&#x2019;s 3 and Julie&#x2019;s 1) for that time period? The
+answer lies in the fact that here we are observing the stream of changes to an
+<em>aggregation</em> of the original inputs; in particular, for the time period from
+12:01 to 12:03, the stream needs to capture two important pieces of
+information regarding the change in Julie&#x2019;s aggregate score due to the arrival
+of the new 1 value:</p>
+<pre><code>The previously reported total of 7 was incorrect.
+The new total is 8.
+</code></pre><p>That&#x2019;s what the special Sys.Undo column allows us to do: distinguish
+between normal rows and rows that are a <em>retraction</em> of a previously reported
+value.</p>
+<p>A particularly nice feature of STREAM queries is that you can begin to see how
+all of this relates to the world of classic Online Transaction Processing
+(OLTP) tables: the STREAM rendering of this query is essentially capturing a
+sequence of INSERT and DELETE operations that you could use to materialize
+this relation over time in an OLTP world (and really, when you think about it,
+OLTP tables themselves are essentially time-varying relations mutated over
+time via a stream of INSERTs, UPDATEs, and DELETEs).</p>
+<p>Now, if we don&#x2019;t care about the retractions in the stream, it&#x2019;s also perfectly
+fine not to ask for them. In that case, our STREAM query would look like this:</p>
+<pre><code>-------------------------
+| Name | Total | Time |
+-------------------------
+| Julie | 7 | 12:01 |
+| Frank | 3 | 12:03 |
+| Julie | 8 | 12:03 |
+.... [12:01, 12:03] .....
+</code></pre><pre><code>4
+</code></pre><p>But there&#x2019;s clearly value in understanding what the full stream looks like, so
+we&#x2019;ll go back to including the Sys.Undo column for our final example.
+Speaking of which, if we waited another four minutes until 12:07, we&#x2019;d be
+greeted by two additional rows in the STREAM query, whereas the TABLE query
+would continue to evolve as before:</p>
+<pre><code>------------------------- -----------------------------
+---
+| Name | Total | Time | | Name | Total | Time |
+Undo |
+------------------------- -----------------------------
+---
+| Julie | 12 | 12:07 | | Julie | 7 | 12:01 |
+|
+| Frank | 3 | 12:03 | | Frank | 3 | 12:03 |
+|
+------------------------- | Julie | 7 | 12:03 |
+undo |
+| Julie | 8 | 12:03 |
+|
+| Julie | 8 | 12:07 |
+undo |
+| Julie | 12 | 12:07 |
+|
+........ [12:01, 12:07]
+........
+</code></pre><p>And by this time, it&#x2019;s quite clear that the STREAM version of our time-varying
+relation is a very different beast from the table version: the table captures a
+snapshot of the entire relation <em>at a specific point in time</em> , whereas the stream
+5</p>
+<p>captures a view of the individual changes to the relation <em>over time</em>.
+Interestingly though, that means that the STREAM rendering has more in
+common with our original, table-based TVR rendering:</p>
+<pre><code>---------------------------------------------------------
+| [-inf, 12:01) | [12:01, 12:03) |
+| ------------------------- | ------------------------- |
+| | Name | Total | Time | | | Name | Total | Time | |
+| ------------------------- | ------------------------- |
+| | | | | | | Julie | 7 | 12:01 | |
+| | | | | | | | | | |
+| ------------------------- | ------------------------- |
+---------------------------------------------------------
+| [12:03, 12:07) | [12:07, now) |
+| ------------------------- | ------------------------- |
+| | Name | Total | Time | | | Name | Total | Time | |
+| ------------------------- | ------------------------- |
+| | Julie | 8 | 12:03 | | | Julie | 12 | 12:07 | |
+| | Frank | 3 | 12:03 | | | Frank | 3 | 12:03 | |
+| ------------------------- | ------------------------- |
+---------------------------------------------------------
+</code></pre><p>Indeed, it&#x2019;s safe to say that the STREAM query simply provides an alternate
+rendering of the entire history of data that exists in the corresponding table-</p>
+<p>based TVR query. The value of the STREAM rendering is its conciseness: it
+captures only the delta of changes between each of the point-in-time relation</p>
+<p>snapshots in the TVR. The value of the sequence-of-tables TVR rendering is the
+clarity it provides: it captures the evolution of the relation over time in a
+format that highlights its natural relationship to classic relations, and in doing
+so provides for a simple and clear definition of relational semantics within the
+context of streaming as well as the additional dimension of time that
+streaming brings.</p>
+<p>Another important aspect of the similarities between the STREAM and table-
+based TVR renderings is the fact that they are essentially equivalent in the</p>
+<pre><code>5
+</code></pre><p>overall data they encode. This gets to the core of the stream/table duality that
+its proponents have long preached: streams and tables are really just two
+different sides of the same coin. Or to resurrect the bad physics analogy from
+Chapter 6, streams and tables are to time-varying relations as waves and
+particles are to light: a complete time-varying relation is both a table and a
+stream at the same time; tables and streams are simply different physical
+manifestations of the same concept, depending upon the context.</p>
+<p>Now, it&#x2019;s important to keep in mind that this stream/table duality is true only
+as long as both versions encode the same information; that is, when you have
+full-fidelity tables or streams. In many cases, however, full fidelity is
+impractical. As I alluded to earlier, encoding the full history of a time-varying
+relation, no matter whether it&#x2019;s in stream or table form, can be rather
+expensive for a large data source. It&#x2019;s quite common for stream and table
+manifestations of a TVR to be lossy in some way. Tables typically encode
+only the most recent version of a TVR; those that support temporal or
+versioned access often compress the encoded history to specific point-in-time
+snapshots, and/or garbage-collect versions that are older than some threshold.
+Similarly, streams typically encode only a limited duration of the evolution of
+a TVR, often a relatively recent portion of that history. Persistent streams like
+Kafka afford the ability to encode the entirety of a TVR, but again this is
+relatively uncommon, with data older than some threshold typically thrown
+away via a garbage-collection process.</p>
+<p>The main point here is that streams and tables are absolutely duals of one
+another, each a valid way of encoding a time-varying relation. But in
+practice, it&#x2019;s common for the physical stream/table manifestations of a TVR
+to be lossy in some way. These partial-fidelity streams and tables trade off a
+decrease in total encoded information for some benefit, usually decreased
+resource costs. And these types of trade-offs are important because they&#x2019;re
+often what allow us to build pipelines that operate over data sources of truly
+massive scale. But they also complicate matters, and require a deeper
+understanding to use correctly. We discuss this topic in more detail later on
+when we get to SQL language extensions. But before we try to reason about
+SQL extensions, it will be useful to understand a little more concretely the</p>
+<pre><code>6
+</code></pre><pre><code>7
+</code></pre><p>biases present in both the SQL and non-SQL data processing approaches
+common today.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Chapter 8. Streaming SQL">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="section2.html" class="navigation navigation-next " aria-label="Next page: Looking Backward: Stream and Table Biases">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"What Is Streaming SQL?","level":"1.10.1","depth":2,"next":{"title":"Looking Backward: Stream and Table Biases","level":"1.10.2","depth":2,"path":"chapter8/section2.md","ref":"chapter8/section2.md","articles":[]},"previous":{"title":"Chapter 8. Streaming SQL","level":"1.10","depth":1,"path":"chapter8/README.md","ref":"chapter8/README.md","articles":[{"title":"What Is Streaming SQL?","level":"1.10.1","depth":2,"path":"chapter8/section1.md","ref":"chapter8/section1.md","articles":[]},{"title":"Looking Backward: Stream and Table Biases","level":"1.10.2","depth":2,"path":"chapter8/section2.md","ref":"chapter8/section2.md","articles":[]},{"title":"Looking Forward: Toward Robust Streaming SQL","level":"1.10.3","depth":2,"path":"chapter8/section3.md","ref":"chapter8/section3.md","articles":[]},{"title":"Summary","level":"1.10.4","depth":2,"path":"chapter8/section4.md","ref":"chapter8/section4.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter8/section1.md","mtime":"2019-10-27T13:21:22.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-03T07:23:23.538Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

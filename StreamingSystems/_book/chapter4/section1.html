@@ -1,0 +1,1343 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>When/Where: Processing-Time Windows · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="section2.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../INTRODUCTION.html">
+            
+                <a href="../INTRODUCTION.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    Chapter1 Streaming 101
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter1/section1.1.html">
+            
+                <a href="../chapter1/section1.1.html">
+            
+                    
+                    Section1.1 Terminology: What Is Streaming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter1/section1.2.html">
+            
+                <a href="../chapter1/section1.2.html">
+            
+                    
+                    Section1.2 Data Processing Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter1/summary.html">
+            
+                <a href="../chapter1/summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    Chapter2 The What, Where,When, and How of Data Processing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter1/section1.1.html">
+            
+                <a href="../chapter1/section1.1.html">
+            
+                    
+                    Section2.1 Roadmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter2/section1.2.html">
+            
+                <a href="../chapter2/section1.2.html">
+            
+                    
+                    Section2.2 Batch Foundations: What and Where
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter2/summary0.html">
+            
+                <a href="../chapter2/summary0.html">
+            
+                    
+                    Going Streaming: When and How
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter2/summary.html">
+            
+                <a href="../chapter2/summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter3/">
+            
+                <a href="../chapter3/">
+            
+                    
+                    Chapter3  Watermarks
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter3/section1.html">
+            
+                <a href="../chapter3/section1.html">
+            
+                    
+                    Section3.1 Definition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter3/section2.html">
+            
+                <a href="../chapter3/section2.html">
+            
+                    
+                    Section3.2 Source Watermark Creation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter3/section3.html">
+            
+                <a href="../chapter3/section3.html">
+            
+                    
+                    Watermark Propagation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter3/section4.html">
+            
+                <a href="../chapter3/section4.html">
+            
+                    
+                    Percentile Watermarks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../chapter3/section5.html">
+            
+                <a href="../chapter3/section5.html">
+            
+                    
+                    Processing-Time Watermarks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../chapter3/section6.html">
+            
+                <a href="../chapter3/section6.html">
+            
+                    
+                    Case Studies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../chapter3/section7.html">
+            
+                <a href="../chapter3/section7.html">
+            
+                    
+                    Watermark Propagation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../chapter3/summary.md">
+            
+                <span>
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Chapter 4. Advanced Windowing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1" data-path="section1.html">
+            
+                <a href="section1.html">
+            
+                    
+                    When/Where: Processing-Time Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="section2.html">
+            
+                <a href="section2.html">
+            
+                    
+                    Where: Session Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="section3.html">
+            
+                <a href="section3.html">
+            
+                    
+                    Where: Custom Windowing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="summary.html">
+            
+                <a href="summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    Chapter5 Exactly-Once and Side Effects
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter5/section1.html">
+            
+                <a href="../chapter5/section1.html">
+            
+                    
+                    Why Exactly Once Matters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../chapter5/section2.html">
+            
+                <a href="../chapter5/section2.html">
+            
+                    
+                    Accuracy Versus Completeness
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../chapter5/section3.html">
+            
+                <a href="../chapter5/section3.html">
+            
+                    
+                    Ensuring Exactly Once in Shuffle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../chapter5/section4.html">
+            
+                <a href="../chapter5/section4.html">
+            
+                    
+                    Addressing Determinism
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../chapter5/section5.html">
+            
+                <a href="../chapter5/section5.html">
+            
+                    
+                    Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../chapter5/section6.html">
+            
+                <a href="../chapter5/section6.html">
+            
+                    
+                    Exactly Once in Sources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../chapter5/section7.html">
+            
+                <a href="../chapter5/section7.html">
+            
+                    
+                    Exactly Once in Sinks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../chapter5/section8.html">
+            
+                <a href="../chapter5/section8.html">
+            
+                    
+                    Use Cases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../chapter5/section8.html">
+            
+                <a href="../chapter5/section8.html">
+            
+                    
+                    Other Systems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../chapter5/section9.html">
+            
+                <a href="../chapter5/section9.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter6/">
+            
+                <a href="../chapter6/">
+            
+                    
+                    Chapter6 Streams and Tables
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chapter6/section1.html">
+            
+                <a href="../chapter6/section1.html">
+            
+                    
+                    Stream-and-Table Basics Or: a Special Theory of Stream and Table Relativity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../chapter6/section2.html">
+            
+                <a href="../chapter6/section2.html">
+            
+                    
+                    Batch Processing Versus Streams and Tables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../chapter6/section3.html">
+            
+                <a href="../chapter6/section3.html">
+            
+                    
+                    What, Where, When, and How in a Streams and Tables World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../chapter6/section4.html">
+            
+                <a href="../chapter6/section4.html">
+            
+                    
+                    A General Theory of Stream and Table Relativity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../chapter6/section5.html">
+            
+                <a href="../chapter6/section5.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter7/">
+            
+                <a href="../chapter7/">
+            
+                    
+                    Chapter 7. The Practicalities of Persistent State
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chapter7/section1.html">
+            
+                <a href="../chapter7/section1.html">
+            
+                    
+                    Motivation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chapter7/section2.html">
+            
+                <a href="../chapter7/section2.html">
+            
+                    
+                    Implicit State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../chapter7/section3.html">
+            
+                <a href="../chapter7/section3.html">
+            
+                    
+                    Generalized State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../chapter7/section4.html">
+            
+                <a href="../chapter7/section4.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../chapter8/">
+            
+                <a href="../chapter8/">
+            
+                    
+                    Chapter 8. Streaming SQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../chapter8/section1.html">
+            
+                <a href="../chapter8/section1.html">
+            
+                    
+                    What Is Streaming SQL?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../chapter8/section2.html">
+            
+                <a href="../chapter8/section2.html">
+            
+                    
+                    Looking Backward: Stream and Table Biases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../chapter8/section3.html">
+            
+                <a href="../chapter8/section3.html">
+            
+                    
+                    Looking Forward: Toward Robust Streaming SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../chapter8/section4.html">
+            
+                <a href="../chapter8/section4.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../chapter9/">
+            
+                <a href="../chapter9/">
+            
+                    
+                    Chapter 9. Streaming Joins
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../chapter9/section2.html">
+            
+                <a href="../chapter9/section2.html">
+            
+                    
+                    All Your Joins Are Belong to Streaming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../chapter9/section3.html">
+            
+                <a href="../chapter9/section3.html">
+            
+                    
+                    Unwindowed Joins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../chapter9/section4.html">
+            
+                <a href="../chapter9/section4.html">
+            
+                    
+                    Windowed Joins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../chapter9/section5.html">
+            
+                <a href="../chapter9/section5.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../chapter10/">
+            
+                <a href="../chapter10/">
+            
+                    
+                    Chapter 10. The Evolution of Large-Scale Data Processing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../chapter10/section1.html">
+            
+                <a href="../chapter10/section1.html">
+            
+                    
+                    MapReduce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../chapter10/section2.html">
+            
+                <a href="../chapter10/section2.html">
+            
+                    
+                    Hadoop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../chapter10/section3.html">
+            
+                <a href="../chapter10/section3.html">
+            
+                    
+                    Flume
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../chapter10/section4.html">
+            
+                <a href="../chapter10/section4.html">
+            
+                    
+                    Storm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../chapter10/section5.html">
+            
+                <a href="../chapter10/section5.html">
+            
+                    
+                    Spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../chapter10/section6.html">
+            
+                <a href="../chapter10/section6.html">
+            
+                    
+                    MillWheel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../chapter10/section7.html">
+            
+                <a href="../chapter10/section7.html">
+            
+                    
+                    Kafaka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../chapter10/section8.html">
+            
+                <a href="../chapter10/section8.html">
+            
+                    
+                    CloudDataFlow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../chapter10/section9.html">
+            
+                <a href="../chapter10/section9.html">
+            
+                    
+                    Flink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="../chapter10/section9.html">
+            
+                <a href="../chapter10/section9.html">
+            
+                    
+                    Beam
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="../chapter10/section10.html">
+            
+                <a href="../chapter10/section10.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >When/Where: Processing-Time Windows</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="when--where--processing-time-windows">When / Where : Processing-Time Windows</h2>
+<p>Processing-time windowing is important for two reasons:</p>
+<pre><code>For certain use cases, such as usage monitoring (e.g., web service
+traffic QPS), for which you want to analyze an incoming stream of
+data as it&#x2019;s observed, processing-time windowing is absolutely the
+appropriate approach to take.
+For use cases for which the time that events happened is important
+(e.g., analyzing user behavior trends, billing, scoring, etc.),
+processing-time windowing is absolutely the wrong approach to
+take, and being able to recognize these cases is critical.
+</code></pre><p>As such, it&#x2019;s worth gaining a solid understanding of the differences between</p>
+<p>processing-time windowing and event-time windowing, particularly given the
+prevalence of processing-time windowing in many streaming systems today.</p>
+<p>When working within a model for which windowing as a first-class notion is
+strictly event-time based, such as the one presented in this book, there are two
+methods that you can use to achieve processing-time windowing:</p>
+<p>Triggers</p>
+<pre><code>Ignore event time (i.e., use a global window spanning all of event time)
+and use triggers to provide snapshots of that window in the processing-
+time axis.
+</code></pre><p>Ingress time</p>
+<pre><code>Assign ingress times as the event times for data as they arrive, and use
+normal event-time windowing from there on. This is essentially what
+something like Spark Streaming 1.x does.
+</code></pre><p>Note that the two methods are more or less equivalent, although they differ
+slightly in the case of multistage pipelines: in the triggers version, a
+multistage pipeline will slice the processing-time &#x201C;windows&#x201D; independently
+at each stage, so, for example, data in window <em>N</em> for one stage might instead
+end up in window <em>N</em> &#x2013;1 or <em>N</em> +1 in the following stage; in the ingress-time
+version, after a datum is incorporated into window <em>N</em> , it will remain in
+window <em>N</em> for the duration of the pipeline due to synchronization of progress
+between stages via watermarks (in the Cloud Dataflow case), microbatch
+boundaries (in the Spark Streaming case), or whatever other coordinating
+factor is involved at the engine level.</p>
+<p>As I&#x2019;ve noted to death, the big downside of processing-time windowing is
+that the contents of the windows change when the observation order of the
+inputs changes. To drive this point home in a more concrete manner, we&#x2019;re
+going to look at these three use cases: <em>event-time</em> windowing, <em>processing-time</em>
+windowing via triggers, and <em>processing-time</em> windowing via ingress time.</p>
+<p>Each will be applied to two different input sets (so six variations total). The
+two inputs sets will be for the exact same events (i.e., same values, occurring
+at the same event times), but with different observation orders. The first set</p>
+<p>will be the observation order we&#x2019;ve seen all along, colored white; the second
+one will have all the values shifted in the processing-time axis as in Figure 4-
+1 , colored purple. You can simply imagine that the purple example is another
+way reality could have happened if the winds had been blowing in from the
+east instead of the west (i.e., the underlying set of complex distributed
+systems had played things out in a slightly different order).</p>
+<pre><code>Figure 4-1. Shifting input observation order in processing time, holding values, and event-
+times constant
+</code></pre><h2 id="event-time-windowing">Event-Time Windowing</h2>
+<p>To establish a baseline, let&#x2019;s first compare fixed windowing in event time
+with a heuristic watermark over these two observation orderings. We&#x2019;ll reuse
+the early/late code from Example 2-7/Figure 2-10 to get the results shown in
+Figure 4-2. The lefthand side is essentially what we saw before; the righthand
+side is the results over the second observation order. The important thing to
+note here is that even though the overall shape of the outputs differs (due to
+the different orders of observation in processing time), <em>the final results for the
+four windows remain the same</em> : 14, 18, 3, and 12.</p>
+<pre><code>00:00 / 00:00
+</code></pre><p><em>Figure 4-2. Event-time windowing over two different processing-time orderings of the same
+inputs</em></p>
+<h2 id="processing-time-windowing-via-triggers">Processing-Time Windowing via Triggers</h2>
+<p>Let&#x2019;s now compare this to the two processing-time methods just described.
+First, we&#x2019;ll try the triggers method. There are three aspects to making</p>
+<pre><code>00:00 / 00:00
+</code></pre><p>processing-time &#x201C;windowing&#x201D; work in this manner:</p>
+<p>Windowing</p>
+<pre><code>We use the global event-time window because we&#x2019;re essentially
+emulating processing-time windows with event-time panes.
+</code></pre><p>Triggering</p>
+<pre><code>We trigger periodically in the processing-time domain based on the
+desired size of the processing-time windows.
+</code></pre><p>Accumulation</p>
+<pre><code>We use discarding mode to keep the panes independent from one another,
+thus letting each of them act like an independent processing-time
+&#x201C;window.&#x201D;
+</code></pre><p>The corresponding code looks something like Example 4-1; note that global
+windowing is the default in Beam, hence there is no specific override of the
+windowing strategy.</p>
+<p><em>Example 4-1. Processing-time windowing via repeated, discarding panes of a
+global event-time window</em></p>
+<p>PCollection<kv<team, integer="">&gt; totals = input
+.apply(Window.triggering(Repeatedly(AlignedDelay(ONE_MINUTE)))
+.discardingFiredPanes())
+.apply(Sum.integersPerKey());</kv<team,></p>
+<p>When executed on a streaming runner against our two different orderings of
+the input data, the results look like Figure 4-3. Here are some interesting
+notes about this figure:</p>
+<pre><code>Because we&#x2019;re emulating processing-time windows via event-time
+panes, the &#x201C;windows&#x201D; are delineated in the processing-time axis,
+which means their effective width is measured on the y-axis instead
+of the x-axis.
+</code></pre><pre><code>Because processing-time windowing is sensitive to the order that
+input data are encountered, the results for each of the &#x201C;windows&#x201D;
+differs for each of the two observation orders, even though the
+</code></pre><pre><code>events themselves technically happened at the same times in each
+version. On the left we get 12, 18, 18, whereas on the right we get 7,
+36, 5.
+</code></pre><pre><code>Figure 4-3. Processing-time &#x201C;windowing&#x201D; via triggers, over two different processing-time
+orderings of the same inputs
+</code></pre><h2 id="processing-time-windowing-via-ingress-time">Processing-Time Windowing via Ingress Time</h2>
+<p>Lastly, let&#x2019;s look at processing-time windowing achieved by mapping the
+event times of input data to be their ingress times. Code-wise, there are four
+aspects worth mentioning here:</p>
+<p>Time-shifting</p>
+<pre><code>When elements arrive, their event times need to be overwritten with the
+time of ingress. We can do this in Beam by providing a new DoFn that
+sets the timestamp of the element to the current time via the
+outputWithTimestamp method.
+</code></pre><p>Windowing</p>
+<pre><code>Return to using standard event-time fixed windowing.
+</code></pre><p>Triggering</p>
+<pre><code>Because ingress time affords the ability to calculate a perfect watermark,
+we can use the default trigger, which in this case implicitly fires exactly
+once when the watermark passes the end of the window.
+</code></pre><p>Accumulation mode</p>
+<pre><code>Because we only ever have one output per window, the accumulation
+</code></pre><pre><code>00:00 / 00:00
+</code></pre><pre><code>mode is irrelevant.
+</code></pre><p>The actual code might thus look something like that in Example 4-2.</p>
+<p><em>Example 4-2. Processing-time windowing via repeated, discarding panes of a
+global event-time window</em></p>
+<p>PCollection<string> raw = IO.read().apply(ParDo.of(
+new DoFn<string, string="">() {
+public void processElement(ProcessContext c) {
+c.outputWithTimestmap(new Instant());
+}
+});
+PCollection<kv<team, integer="">&gt; input =
+raw.apply(ParDo.of(new ParseFn());
+PCollection<kv<team, integer="">&gt; totals = input
+.apply(Window.info(FixedWindows.of(TWO_MINUTES))
+.apply(Sum.integersPerKey());</kv<team,></kv<team,></string,></string></p>
+<p>Execution on a streaming engine would look like Figure 4-4. As data arrive,
+their event times are updated to match their ingress times (i.e., the processing
+times at arrival), resulting in a rightward horizontal shift onto the ideal
+watermark line. Here are some interesting notes about this figure:</p>
+<pre><code>As with the other processing-time windowing example, we get
+different results when the ordering of inputs changes, even though
+the values and event times for the input stay constant.
+</code></pre><pre><code>Unlike the other example, the windows are once again delineated in
+the event-time domain (and thus along the x-axis). Despite this, they
+aren&#x2019;t bonafide event-time windows; we&#x2019;ve simply mapped
+processing time onto the event-time domain, erasing the original
+record of occurrence for each input and replacing it with a new one
+that instead represents the time the datum was first observed by the
+pipeline.
+</code></pre><pre><code>Despite this, thanks to the watermark, trigger firings still happen at
+exactly the same time as in the previous processing-time example.
+Furthermore, the output values produced are identical to that
+example, as predicted: 12, 18, 18 on the left, and 7, 36, 5 on the
+</code></pre><pre><code>right.
+</code></pre><pre><code>Because perfect watermarks are possible when using ingress time,
+the actual watermark matches the ideal watermark, ascending up and
+to the right with a slope of one.
+</code></pre><pre><code>Figure 4-4. Processing-time windowing via the use of ingress time, over two different
+processing-time orderings of the same inputs
+</code></pre><p>Although it&#x2019;s interesting to see the different ways you can implement
+processing-time windowing, the big takeaway here is the one I&#x2019;ve been
+harping on since the first chapter: event-time windowing is order-agnostic, at
+least in the limit (actual panes along the way might differ until the input
+becomes complete); processing-time windowing is not. <em>If you care about the
+times at which your events actually happened, you must use event-time
+windowing or your results will be meaningless.</em> I will get off my soapbox
+now.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Chapter 4. Advanced Windowing">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="section2.html" class="navigation navigation-next " aria-label="Next page: Where: Session Windows">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"When/Where: Processing-Time Windows","level":"1.6.1","depth":2,"next":{"title":"Where: Session Windows","level":"1.6.2","depth":2,"path":"chapter4/section2.md","ref":"chapter4/section2.md","articles":[]},"previous":{"title":"Chapter 4. Advanced Windowing","level":"1.6","depth":1,"path":"chapter4/README.md","ref":"chapter4/README.md","articles":[{"title":"When/Where: Processing-Time Windows","level":"1.6.1","depth":2,"path":"chapter4/section1.md","ref":"chapter4/section1.md","articles":[]},{"title":"Where: Session Windows","level":"1.6.2","depth":2,"path":"chapter4/section2.md","ref":"chapter4/section2.md","articles":[]},{"title":"Where: Custom Windowing","level":"1.6.3","depth":2,"path":"chapter4/section3.md","ref":"chapter4/section3.md","articles":[]},{"title":"Summary","level":"1.6.4","depth":2,"path":"chapter4/summary.md","ref":"chapter4/summary.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter4/section1.md","mtime":"2019-10-27T13:00:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-03T07:23:23.538Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

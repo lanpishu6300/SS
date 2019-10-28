@@ -1,0 +1,1500 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Watermark Propagation · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="section4.html" />
+    
+    
+    <link rel="prev" href="section2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../INTRODUCTION.html">
+            
+                <a href="../INTRODUCTION.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    Chapter1 Streaming 101
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter1/section1.1.html">
+            
+                <a href="../chapter1/section1.1.html">
+            
+                    
+                    Section1.1 Terminology: What Is Streaming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter1/section1.2.html">
+            
+                <a href="../chapter1/section1.2.html">
+            
+                    
+                    Section1.2 Data Processing Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter1/summary.html">
+            
+                <a href="../chapter1/summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    Chapter2 The What, Where,When, and How of Data Processing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter1/section1.1.html">
+            
+                <a href="../chapter1/section1.1.html">
+            
+                    
+                    Section2.1 Roadmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter2/section1.2.html">
+            
+                <a href="../chapter2/section1.2.html">
+            
+                    
+                    Section2.2 Batch Foundations: What and Where
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter2/summary0.html">
+            
+                <a href="../chapter2/summary0.html">
+            
+                    
+                    Going Streaming: When and How
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter2/summary.html">
+            
+                <a href="../chapter2/summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Chapter3  Watermarks
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="section1.html">
+            
+                <a href="section1.html">
+            
+                    
+                    Section3.1 Definition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="section2.html">
+            
+                <a href="section2.html">
+            
+                    
+                    Section3.2 Source Watermark Creation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3" data-path="section3.html">
+            
+                <a href="section3.html">
+            
+                    
+                    Watermark Propagation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="section4.html">
+            
+                <a href="section4.html">
+            
+                    
+                    Percentile Watermarks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="section5.html">
+            
+                <a href="section5.html">
+            
+                    
+                    Processing-Time Watermarks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="section6.html">
+            
+                <a href="section6.html">
+            
+                    
+                    Case Studies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="section7.html">
+            
+                <a href="section7.html">
+            
+                    
+                    Watermark Propagation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="summary.md">
+            
+                <span>
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter4/">
+            
+                <a href="../chapter4/">
+            
+                    
+                    Chapter 4. Advanced Windowing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter4/section1.html">
+            
+                <a href="../chapter4/section1.html">
+            
+                    
+                    When/Where: Processing-Time Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter4/section2.html">
+            
+                <a href="../chapter4/section2.html">
+            
+                    
+                    Where: Session Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter4/section3.html">
+            
+                <a href="../chapter4/section3.html">
+            
+                    
+                    Where: Custom Windowing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../chapter4/summary.html">
+            
+                <a href="../chapter4/summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    Chapter5 Exactly-Once and Side Effects
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter5/section1.html">
+            
+                <a href="../chapter5/section1.html">
+            
+                    
+                    Why Exactly Once Matters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../chapter5/section2.html">
+            
+                <a href="../chapter5/section2.html">
+            
+                    
+                    Accuracy Versus Completeness
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../chapter5/section3.html">
+            
+                <a href="../chapter5/section3.html">
+            
+                    
+                    Ensuring Exactly Once in Shuffle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../chapter5/section4.html">
+            
+                <a href="../chapter5/section4.html">
+            
+                    
+                    Addressing Determinism
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../chapter5/section5.html">
+            
+                <a href="../chapter5/section5.html">
+            
+                    
+                    Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../chapter5/section6.html">
+            
+                <a href="../chapter5/section6.html">
+            
+                    
+                    Exactly Once in Sources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../chapter5/section7.html">
+            
+                <a href="../chapter5/section7.html">
+            
+                    
+                    Exactly Once in Sinks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../chapter5/section8.html">
+            
+                <a href="../chapter5/section8.html">
+            
+                    
+                    Use Cases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../chapter5/section8.html">
+            
+                <a href="../chapter5/section8.html">
+            
+                    
+                    Other Systems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../chapter5/section9.html">
+            
+                <a href="../chapter5/section9.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter6/">
+            
+                <a href="../chapter6/">
+            
+                    
+                    Chapter6 Streams and Tables
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chapter6/section1.html">
+            
+                <a href="../chapter6/section1.html">
+            
+                    
+                    Stream-and-Table Basics Or: a Special Theory of Stream and Table Relativity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../chapter6/section2.html">
+            
+                <a href="../chapter6/section2.html">
+            
+                    
+                    Batch Processing Versus Streams and Tables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../chapter6/section3.html">
+            
+                <a href="../chapter6/section3.html">
+            
+                    
+                    What, Where, When, and How in a Streams and Tables World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../chapter6/section4.html">
+            
+                <a href="../chapter6/section4.html">
+            
+                    
+                    A General Theory of Stream and Table Relativity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../chapter6/section5.html">
+            
+                <a href="../chapter6/section5.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter7/">
+            
+                <a href="../chapter7/">
+            
+                    
+                    Chapter 7. The Practicalities of Persistent State
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chapter7/section1.html">
+            
+                <a href="../chapter7/section1.html">
+            
+                    
+                    Motivation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chapter7/section2.html">
+            
+                <a href="../chapter7/section2.html">
+            
+                    
+                    Implicit State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../chapter7/section3.html">
+            
+                <a href="../chapter7/section3.html">
+            
+                    
+                    Generalized State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../chapter7/section4.html">
+            
+                <a href="../chapter7/section4.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../chapter8/">
+            
+                <a href="../chapter8/">
+            
+                    
+                    Chapter 8. Streaming SQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../chapter8/section1.html">
+            
+                <a href="../chapter8/section1.html">
+            
+                    
+                    What Is Streaming SQL?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../chapter8/section2.html">
+            
+                <a href="../chapter8/section2.html">
+            
+                    
+                    Looking Backward: Stream and Table Biases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../chapter8/section3.html">
+            
+                <a href="../chapter8/section3.html">
+            
+                    
+                    Looking Forward: Toward Robust Streaming SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../chapter8/section4.html">
+            
+                <a href="../chapter8/section4.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../chapter9/">
+            
+                <a href="../chapter9/">
+            
+                    
+                    Chapter 9. Streaming Joins
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../chapter9/section2.html">
+            
+                <a href="../chapter9/section2.html">
+            
+                    
+                    All Your Joins Are Belong to Streaming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../chapter9/section3.html">
+            
+                <a href="../chapter9/section3.html">
+            
+                    
+                    Unwindowed Joins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../chapter9/section4.html">
+            
+                <a href="../chapter9/section4.html">
+            
+                    
+                    Windowed Joins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../chapter9/section5.html">
+            
+                <a href="../chapter9/section5.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../chapter10/">
+            
+                <a href="../chapter10/">
+            
+                    
+                    Chapter 10. The Evolution of Large-Scale Data Processing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../chapter10/section1.html">
+            
+                <a href="../chapter10/section1.html">
+            
+                    
+                    MapReduce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../chapter10/section2.html">
+            
+                <a href="../chapter10/section2.html">
+            
+                    
+                    Hadoop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../chapter10/section3.html">
+            
+                <a href="../chapter10/section3.html">
+            
+                    
+                    Flume
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../chapter10/section4.html">
+            
+                <a href="../chapter10/section4.html">
+            
+                    
+                    Storm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../chapter10/section5.html">
+            
+                <a href="../chapter10/section5.html">
+            
+                    
+                    Spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../chapter10/section6.html">
+            
+                <a href="../chapter10/section6.html">
+            
+                    
+                    MillWheel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../chapter10/section7.html">
+            
+                <a href="../chapter10/section7.html">
+            
+                    
+                    Kafaka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../chapter10/section8.html">
+            
+                <a href="../chapter10/section8.html">
+            
+                    
+                    CloudDataFlow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../chapter10/section9.html">
+            
+                <a href="../chapter10/section9.html">
+            
+                    
+                    Flink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="../chapter10/section9.html">
+            
+                <a href="../chapter10/section9.html">
+            
+                    
+                    Beam
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="../chapter10/section10.html">
+            
+                <a href="../chapter10/section10.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Watermark Propagation</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="watermark-propagation">Watermark Propagation</h2>
+<p>So far, we have considered only the watermark for the inputs within the
+context of a single operation or stage. However, most real-world pipelines
+consist of multiple stages. Understanding how watermarks propagate across
+independent stages is important in understanding how they affect the pipeline
+as a whole and the observed latency of its results.</p>
+<h3 id="pipeline-stages">PIPELINE STAGES</h3>
+<pre><code>Different stages are typically necessary every time your pipeline groups
+data together by some new dimension. For example, if you had a pipeline
+that consumed raw data, computed some per-user aggregates, and then
+used those per-user aggregates to compute some per-team aggregates,
+you&#x2019;d likely end up with a three-stage pipeline:
+</code></pre><pre><code>One consuming the raw, ungrouped data
+</code></pre><pre><code>One grouping the data by user and computing per-user
+aggregates
+One grouping the data by team and computing per-team
+aggregates
+</code></pre><pre><code>We learn more about the effects of grouping on pipeline shapes in
+Chapter 6.
+</code></pre><p>Watermarks are created at input sources, as discussed in the preceding
+section. They then conceptually flow through the system as data progress
+through it. You can track watermarks at varying levels of granularity. For
+pipelines comprising multiple distinct stages, each stage likely tracks its own
+watermark, whose value is a function of all the inputs and stages that come
+before it. Therefore, stages that come later in the pipeline will have
+watermarks that are further in the past (because they&#x2019;ve seen less of the
+overall input).</p>
+<p>We can define watermarks at the boundaries of any single operation, or stage,</p>
+<pre><code>3
+</code></pre><p>in the pipeline. This is useful not only in understanding the relative progress
+that each stage in the pipeline is making, but for dispatching timely results
+independently and as soon as possible for each individual stage. We give the
+following definitions for the watermarks at the boundaries of stages:</p>
+<pre><code>An input watermark , which captures the progress of everything
+upstream of that stage (i.e., how complete the input is for that stage).
+For sources, the input watermark is a source-specific function
+creating the watermark for the input data. For nonsource stages, the
+input watermark is defined as the minimum of the output
+watermarks of all shards/partitions/instances of all of its upstream
+sources and stages.
+An output watermark , which captures the progress of the stage itself,
+and is essentially defined as the minimum of the stage&#x2019;s input
+watermark and the event times of all nonlate data active messages
+within the stage. Exactly what &#x201C;active&#x201D; encompasses is somewhat
+dependent upon the operations a given stage actually performs, and
+the implementation of the stream processing system. It typically
+includes data buffered for aggregation but not yet materialized
+downstream, pending output data in flight to downstream stages, and
+so on.
+</code></pre><p>One nice feature of defining an input and output watermark for a specific
+stage is that we can use these to calculate the amount of event-time latency
+introduced by a stage. Subtracting the value of a stage&#x2019;s output watermark
+from the value of its input watermark gives the amount of event-time latency
+or <em>lag</em> introduced by the stage. This lag is the notion of how far delayed
+behind real time the output of each stage will be. As an example, a stage
+performing 10-second windowed aggregations will have a lag of 10 seconds
+or more, meaning that the output of the stage will be at least that much
+delayed behind the input and real time. Definitions of input and output
+watermarks provide a recursive relationship of watermarks throughout a
+pipeline. Each subsequent stage in a pipeline delays the watermark as
+necessary, based on event-time lag of the stage.</p>
+<p>Processing within each stage is also not monolithic. We can segment the
+processing within one stage into a flow with several conceptual components,
+each of which contributes to the output watermark. As mentioned previously,
+the exact nature of these components depends on the operations the stage
+performs and the implementation of the system. Conceptually, each such
+component serves as a buffer where active messages can reside until some
+operation has completed. For example, as data arrives, it is buffered for
+processing. Processing might then write the data to state for later delayed
+aggregation. Delayed aggregation, when triggered, might write the results to
+an output buffer awaiting consumption from a downstream stage, as shown in
+Figure 3-3.</p>
+<pre><code>Figure 3-3. Example system components of a streaming system stage, containing buffers of
+in-flight data. Each will have associated watermark tracking, and the overall output
+watermark of the stage will be the minimum of the watermarks across all such buffers.
+</code></pre><p>We can track each such buffer with its own watermark. The minimum of the
+watermarks across the buffers of each stage forms the output watermark of
+the stage. Thus the output watermark could be the minimum of the following:</p>
+<pre><code>Per-source watermark&#x2014;for each sending stage.
+Per-external input watermark&#x2014;for sources external to the pipeline
+</code></pre><pre><code>Per-state component watermark&#x2014;for each type of state that can be
+written
+</code></pre><pre><code>Per-output buffer watermark&#x2014;for each receiving stage
+</code></pre><p>Making watermarks available at this level of granularity also provides better
+visibility into the behavior of the system. The watermarks track locations of
+messages across various buffers in the system, allowing for easier diagnosis
+of stuckness.</p>
+<h2 id="understanding-watermark-propagation">Understanding Watermark Propagation</h2>
+<p>To get a better sense for the relationship between input and output
+watermarks and how they affect watermark propagation, let&#x2019;s look at an
+example. Let&#x2019;s consider gaming scores, but instead of computing sums of
+team scores, we&#x2019;re going to take a stab at measuring user engagement levels.
+We&#x2019;ll do this by first calculating per-user session lengths, under the
+assumption that the amount of time a user stays engaged with the game is a
+reasonable proxy for how much they&#x2019;re enjoying it. After answering our four
+questions once to calculate sessions lengths, we&#x2019;ll then answer them a second
+time to calculate average session lengths within fixed periods of time.</p>
+<p>To make our example even more interesting, lets say that we are working
+with two datasets, one for Mobile Scores and one for Console Scores. We
+would like to perform identical score calculations via integer summation in
+parallel over these two independant datasets. One pipeline is calculating
+scores for users playing on mobile devices, whereas the other is for users
+playing on home gaming consoles, perhaps due to different data collection
+strategies employed for the different platforms. The important point is that
+these two stages are performing the same operation but over different data,
+and thus with very different output watermarks.</p>
+<p>To begin, let&#x2019;s take a look at Example 3-1 to see what the abbreviated code
+for what the first section of this pipeline might be like.</p>
+<p><em>Example 3-1. Calculating session lengths</em></p>
+<p>PCollection<double> mobileSessions = IO.read(new MobileInputSource())</double></p>
+<p>.apply(Window.into(Sessions.withGapDuration(Duration.standardMinutes(1)))
+.triggering(AtWatermark())</p>
+<p>.discardingFiredPanes())
+.apply(CalculateWindowLength());</p>
+<p>PCollection<double> consoleSessions = IO.read(new ConsoleInputSource())</double></p>
+<p>.apply(Window.into(Sessions.withGapDuration(Duration.standardMinutes(1)))
+.triggering(AtWatermark())
+.discardingFiredPanes())
+.apply(CalculateWindowLength());</p>
+<p>Here, we read in each of our inputs independently, and whereas previously
+we were keying our collections by team, in this example we key by user.
+After that, for the first stage of each pipeline, we window into sessions and
+then call a custom PTransform named CalculateWindowLength. This
+PTransform simply groups by key (i.e., User) and then computes the per-
+user session length by treating the size of the current window as the value for
+that window. In this case, we&#x2019;re fine with the default trigger (AtWatermark)
+and accumulation mode (discardingFiredPanes) settings, but I&#x2019;ve listed
+them explicitly for completeness. The output for each pipeline for two
+particular users might look something like Figure 3-4.</p>
+<pre><code>Figure 3-4. Per-user session lengths across two different input pipelines
+</code></pre><p>Because we need to track data across multiple stages, we track everything
+related to Mobile Scores in red, everything related to Console Scores in blue,
+while the watermark and output for Average Session Lengths in Figure 3-5
+are yellow.</p>
+<p>We have answered the four questions of <em>what</em> , <em>where</em> , <em>when</em> , and <em>how</em> to
+compute individual session lengths. Next we&#x2019;ll answer them a second time to
+transform those session lengths into global session-length averages within</p>
+<pre><code>00:00 / 00:00
+</code></pre><p>fixed windows of time. This requires us to first flatten our two data sources
+into one, and then re-window into fixed windows; we&#x2019;ve already captured the
+important essence of the session in the session-length value we computed,
+and we now want to compute a global average of those sessions within
+consistent windows of time over the course of the day. Example 3-2 shows
+the code for this.</p>
+<p><em>Example 3-2. Calculating session lengths</em></p>
+<p>PCollection<double> mobileSessions = IO.read(new MobileInputSource())</double></p>
+<p>.apply(Window.into(Sessions.withGapDuration(Duration.standardMinutes(1)))
+.triggering(AtWatermark())
+.discardingFiredPanes())
+.apply(CalculateWindowLength());</p>
+<p>PCollection<double> consoleSessions = IO.read(new ConsoleInputSource())</double></p>
+<p>.apply(Window.into(Sessions.withGapDuration(Duration.standardMinutes(1)))
+.triggering(AtWatermark())
+.discardingFiredPanes())
+.apply(CalculateWindowLength());</p>
+<p>PCollection<float> averageSessionLengths = PCollectionList
+.of(mobileSessions).and(consoleSessions)
+.apply(Flatten.pCollections())
+.apply(Window.into(FixedWindows.of(Duration.standardMinutes(2)))
+.triggering(AtWatermark())
+.apply(Mean.globally());</float></p>
+<p>If we were to see this pipeline in action, it would look something like
+Figure 3-5. As before, the two input pipelines are computing individual
+session lengths for mobile and console players. Those session lengths then
+feed into the second stage of the pipeline, where global session-length
+averages are computed in fixed windows.</p>
+<pre><code>Figure 3-5. Average session lengths of mobile and console gaming sessions
+</code></pre><p>Let&#x2019;s walk through some of this example, given that there&#x2019;s a lot going on.
+The two important points here are:</p>
+<pre><code>The output watermark for each of the Mobile Sessions and Console
+Sessions stages is at least as old as the corresponding input
+watermark of each, and in reality a little bit older. This is because in
+a real system computing answers takes time, and we don&#x2019;t allow the
+output watermark to advance until processing for a given input has
+completed.
+The input watermark for the Average Session Lengths stage is the
+minimum of the output watermarks for the two stages directly
+upstream.
+</code></pre><p>The result is that the downstream input watermark is an alias for the
+minimum composition of the upstream output watermarks. Note that this
+matches the definitions for those two types of watermarks earlier in the
+chapter. Also notice how watermarks further downstream are further in the
+past, capturing the intuitive notion that upstream stages are going to be
+further ahead in time than the stages that follow them.</p>
+<p>One observation worth making here is just how cleanly we were able to ask
+the questions again in Example 3-1 to substantially alter the results of the
+pipeline. Whereas before we simply computed per-user session lengths, we
+now compute two-minute global session-length averages. This provides a
+much more insightful look into the overall behaviors of the users playing our
+games and gives you a tiny glimpse of the difference between simple data
+transformations and real data science.</p>
+<pre><code>00:00 / 00:00
+</code></pre><p>Even better, now that we understand the basics of how this pipeline operates,
+we can look more closely at one of the more subtle issues related to asking
+the four questions over again: <em>output timestamps</em>.</p>
+<h2 id="watermark-propagation-and-output-timestamps">Watermark Propagation and Output Timestamps</h2>
+<p>In Figure 3-5, I glossed over some of the details of output timestamps. But if
+you look closely at the second stage in the diagram, you can see that each of
+the outputs from the first stage was assigned a timestamp that matched the
+end of its window. Although that&#x2019;s a fairly natural choice for output
+timestamps, it&#x2019;s not the only valid choice. As you know from earlier in this
+chapter, watermarks are never allowed to move backward. Given that
+restriction, you can infer that the range of valid timestamps for a given
+window begins with the timestamp of the earliest nonlate record in the
+window (because only nonlate records are guaranteed to hold a watermark
+up) and extends all the way to positive infinity. That&#x2019;s quite a lot of options.
+In practice, however, there tend to be only a few choices that make sense in
+most circumstances:</p>
+<p>End of the window</p>
+<pre><code>Using the end of the window is the only safe choice if you want the
+output timestamp to be representative of the window bounds. As we&#x2019;ll see
+in a moment, it also allows the smoothest watermark progression out of
+all of the options.
+</code></pre><p>Timestamp of first nonlate element</p>
+<pre><code>Using the timestamp of the first nonlate element is a good choice when
+you want to keep your watermarks as conservative as possible. The trade-
+off, however, is that watermark progress will likely be more hindered, as
+we&#x2019;ll also see shortly.
+</code></pre><p>Timestamp of a specific element</p>
+<pre><code>For certain use cases, the timestamp of some other arbitrary (from the
+system&#x2019;s perspective) element is the right choice. Imagine a use case in
+which you&#x2019;re joining a stream of queries to a stream of clicks on results
+</code></pre><pre><code>4
+</code></pre><pre><code>for that query. After performing the join, some systems will find the
+timestamp of the query to be more useful; others will prefer the
+timestamp of the click. Any such timestamp is valid from a watermark
+correctness perspective, as long as it corresponded to an element that did
+not arrive late.
+</code></pre><p>Having thought a bit about some alternate options for output timestamps,
+let&#x2019;s look at what effects the choice of output timestamp can have on the
+overall pipeline. To make the changes as dramatic as possible, in Example 3-
+3 and Figure 3-6, we&#x2019;ll switch to using the earliest timestamp possible for the
+window: the timestamp of the first nonlate element as the timestamp for the
+window.</p>
+<p><em>Example 3-3. Average session lengths pipeline, that output timestamps for
+session windows set at earliest element</em></p>
+<p>PCollection<double> mobileSessions = IO.read(new MobileInputSource())</double></p>
+<p>.apply(Window.into(Sessions.withGapDuration(Duration.standardMinutes(1)))
+.triggering(AtWatermark())
+.withTimestampCombiner(EARLIEST)
+.discardingFiredPanes())
+.apply(CalculateWindowLength());</p>
+<p>PCollection<double> consoleSessions = IO.read(new ConsoleInputSource())</double></p>
+<p>.apply(Window.into(Sessions.withGapDuration(Duration.standardMinutes(1)))
+.triggering(AtWatermark())
+.withTimestampCombiner(EARLIEST)
+.discardingFiredPanes())
+.apply(CalculateWindowLength());</p>
+<p>PCollection<float> averageSessionLengths = PCollectionList
+.of(mobileSessions).and(consoleSessions)
+.apply(Flatten.pCollections())
+.apply(Window.into(FixedWindows.of(Duration.standardMinutes(2)))
+.triggering(AtWatermark())
+.apply(Mean.globally());</float></p>
+<pre><code>Figure 3-6. Average session lengths for sessions that are output at the timestamp of the
+earliest element
+</code></pre><p>To help call out the effect of the output timestamp choice, look at the dashed
+lines in the first stages showing what the output watermark for each stage is
+being held to. The output watermark is delayed by our choice of timestamp,
+as compared to Figures 3-7 and 3-8, in which the output timestamp was
+chosen to be the end of the window. You can see from this diagram that the
+input watermark of the second stage is thus subsequently also delayed.</p>
+<pre><code>Figure 3-7. Comparison of watermarks and results with different choice of window outout
+</code></pre><pre><code>00:00 / 00:00
+</code></pre><pre><code>timestamps. The watermarks in this figure correspond to output timestamps at the end of
+the session windows (i.e., Figure 3-5).
+</code></pre><pre><code>Figure 3-8. In this figure, the watermarks are at the beginning of the session windows (i.e.,
+Figure 3-6). We can see that the watermark line in this figure is more delayed, and the
+resulting average session lengths are different.
+</code></pre><p>As far as differences in this version compared to Figure 3-7, two are worth
+noting:</p>
+<p>Watermark delay</p>
+<pre><code>Compared to Figure 3-5, the watermark proceeds much more slowly in
+Figure 3-6. This is because the output watermark for the first stage is held
+back to the timestamp of the first element in every window until the input
+for that window becomes complete. Only after a given window has been
+materialized is the output watermark (and thus the downstream input
+watermark) allowed to advance.
+</code></pre><p>Semantic differences</p>
+<pre><code>Because the session timestamps are now assigned to match the earliest
+nonlate element in the session, the individual sessions often end up in
+different fixed window buckets when we then calculate the session-length
+averages in the next stage. There&#x2019;s nothing inherently right or wrong
+about either of the two options we&#x2019;ve seen so far; they&#x2019;re just different.
+But it&#x2019;s important to understand that they will be different as well as have
+an intuition for the way in which they&#x2019;ll be different so that you can make
+the correct choice for your specific use case when the time comes.
+</code></pre><h2 id="the-tricky-case-of-overlapping-windows">The Tricky Case of Overlapping Windows</h2>
+<p>One additional subtle but important issue regarding output timestamps is how
+to handle sliding windows. The naive approach of setting the output
+timestamp to the earliest element can very easily lead to delays downstream
+due to watermarks being (correctly) held back. To see why, consider an
+example pipeline with two stages, each using the same type of sliding
+windows. Suppose that each element ends up in three successive windows.
+As the input watermark advances, the desired semantics for sliding windows
+in this case would be as follows:</p>
+<pre><code>The first window completes in the first stage and is emitted
+downstream.
+The first window then completes in the second stage and can also be
+emitted downstream.
+</code></pre><pre><code>Some time later, the second window completes in the first stage...
+and so on.
+</code></pre><p>However, if output timestamps are chosen to be the timestamp of the first
+nonlate element in the pane, what actually happens is the following:</p>
+<pre><code>The first window completes in the first stage and is emitted
+downstream.
+The first window in the second stage remains unable to complete
+</code></pre><pre><code>because its input watermark is being held up by the output
+watermark of the second and third windows upstream. Those
+watermarks are rightly being held back because the earliest element
+timestamp is being used as the output timestamp for those windows.
+</code></pre><pre><code>The second window completes in the first stage and is emitted
+downstream.
+The first and second windows in the second stage remain unable to
+complete, held up by the third window upstream.
+The third window completes in the first stage and is emitted
+downstream.
+</code></pre><pre><code>The first, second, and third windows in the second stage are now all
+able to complete, finally emitting all three in one swoop.
+</code></pre><p>Although the results of this windowing are correct, this leads to the results
+being materialized in an unnecessarily delayed way. Because of this, Beam
+has special logic for overlapping windows that ensures the output timestamp
+for window <em>N</em> +1 is always greater than the end of window <em>N</em>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="section2.html" class="navigation navigation-prev " aria-label="Previous page: Section3.2 Source Watermark Creation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="section4.html" class="navigation navigation-next " aria-label="Next page: Percentile Watermarks">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Watermark Propagation","level":"1.5.3","depth":2,"next":{"title":"Percentile Watermarks","level":"1.5.4","depth":2,"path":"chapter3/section4.md","ref":"chapter3/section4.md","articles":[]},"previous":{"title":"Section3.2 Source Watermark Creation","level":"1.5.2","depth":2,"path":"chapter3/section2.md","ref":"chapter3/section2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter3/section3.md","mtime":"2019-10-27T12:55:05.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-03T07:23:23.538Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

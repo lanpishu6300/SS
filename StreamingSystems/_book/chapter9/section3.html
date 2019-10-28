@@ -1,0 +1,1871 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Unwindowed Joins · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="section4.html" />
+    
+    
+    <link rel="prev" href="section2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../INTRODUCTION.html">
+            
+                <a href="../INTRODUCTION.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    Chapter1 Streaming 101
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter1/section1.1.html">
+            
+                <a href="../chapter1/section1.1.html">
+            
+                    
+                    Section1.1 Terminology: What Is Streaming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter1/section1.2.html">
+            
+                <a href="../chapter1/section1.2.html">
+            
+                    
+                    Section1.2 Data Processing Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter1/summary.html">
+            
+                <a href="../chapter1/summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    Chapter2 The What, Where,When, and How of Data Processing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter1/section1.1.html">
+            
+                <a href="../chapter1/section1.1.html">
+            
+                    
+                    Section2.1 Roadmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter2/section1.2.html">
+            
+                <a href="../chapter2/section1.2.html">
+            
+                    
+                    Section2.2 Batch Foundations: What and Where
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter2/summary0.html">
+            
+                <a href="../chapter2/summary0.html">
+            
+                    
+                    Going Streaming: When and How
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter2/summary.html">
+            
+                <a href="../chapter2/summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter3/">
+            
+                <a href="../chapter3/">
+            
+                    
+                    Chapter3  Watermarks
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter3/section1.html">
+            
+                <a href="../chapter3/section1.html">
+            
+                    
+                    Section3.1 Definition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter3/section2.html">
+            
+                <a href="../chapter3/section2.html">
+            
+                    
+                    Section3.2 Source Watermark Creation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter3/section3.html">
+            
+                <a href="../chapter3/section3.html">
+            
+                    
+                    Watermark Propagation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter3/section4.html">
+            
+                <a href="../chapter3/section4.html">
+            
+                    
+                    Percentile Watermarks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../chapter3/section5.html">
+            
+                <a href="../chapter3/section5.html">
+            
+                    
+                    Processing-Time Watermarks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../chapter3/section6.html">
+            
+                <a href="../chapter3/section6.html">
+            
+                    
+                    Case Studies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../chapter3/section7.html">
+            
+                <a href="../chapter3/section7.html">
+            
+                    
+                    Watermark Propagation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../chapter3/summary.md">
+            
+                <span>
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter4/">
+            
+                <a href="../chapter4/">
+            
+                    
+                    Chapter 4. Advanced Windowing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter4/section1.html">
+            
+                <a href="../chapter4/section1.html">
+            
+                    
+                    When/Where: Processing-Time Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter4/section2.html">
+            
+                <a href="../chapter4/section2.html">
+            
+                    
+                    Where: Session Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter4/section3.html">
+            
+                <a href="../chapter4/section3.html">
+            
+                    
+                    Where: Custom Windowing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../chapter4/summary.html">
+            
+                <a href="../chapter4/summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    Chapter5 Exactly-Once and Side Effects
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter5/section1.html">
+            
+                <a href="../chapter5/section1.html">
+            
+                    
+                    Why Exactly Once Matters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../chapter5/section2.html">
+            
+                <a href="../chapter5/section2.html">
+            
+                    
+                    Accuracy Versus Completeness
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../chapter5/section3.html">
+            
+                <a href="../chapter5/section3.html">
+            
+                    
+                    Ensuring Exactly Once in Shuffle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../chapter5/section4.html">
+            
+                <a href="../chapter5/section4.html">
+            
+                    
+                    Addressing Determinism
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../chapter5/section5.html">
+            
+                <a href="../chapter5/section5.html">
+            
+                    
+                    Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../chapter5/section6.html">
+            
+                <a href="../chapter5/section6.html">
+            
+                    
+                    Exactly Once in Sources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../chapter5/section7.html">
+            
+                <a href="../chapter5/section7.html">
+            
+                    
+                    Exactly Once in Sinks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../chapter5/section8.html">
+            
+                <a href="../chapter5/section8.html">
+            
+                    
+                    Use Cases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../chapter5/section8.html">
+            
+                <a href="../chapter5/section8.html">
+            
+                    
+                    Other Systems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../chapter5/section9.html">
+            
+                <a href="../chapter5/section9.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter6/">
+            
+                <a href="../chapter6/">
+            
+                    
+                    Chapter6 Streams and Tables
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chapter6/section1.html">
+            
+                <a href="../chapter6/section1.html">
+            
+                    
+                    Stream-and-Table Basics Or: a Special Theory of Stream and Table Relativity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../chapter6/section2.html">
+            
+                <a href="../chapter6/section2.html">
+            
+                    
+                    Batch Processing Versus Streams and Tables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../chapter6/section3.html">
+            
+                <a href="../chapter6/section3.html">
+            
+                    
+                    What, Where, When, and How in a Streams and Tables World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../chapter6/section4.html">
+            
+                <a href="../chapter6/section4.html">
+            
+                    
+                    A General Theory of Stream and Table Relativity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../chapter6/section5.html">
+            
+                <a href="../chapter6/section5.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter7/">
+            
+                <a href="../chapter7/">
+            
+                    
+                    Chapter 7. The Practicalities of Persistent State
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chapter7/section1.html">
+            
+                <a href="../chapter7/section1.html">
+            
+                    
+                    Motivation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chapter7/section2.html">
+            
+                <a href="../chapter7/section2.html">
+            
+                    
+                    Implicit State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../chapter7/section3.html">
+            
+                <a href="../chapter7/section3.html">
+            
+                    
+                    Generalized State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../chapter7/section4.html">
+            
+                <a href="../chapter7/section4.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../chapter8/">
+            
+                <a href="../chapter8/">
+            
+                    
+                    Chapter 8. Streaming SQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../chapter8/section1.html">
+            
+                <a href="../chapter8/section1.html">
+            
+                    
+                    What Is Streaming SQL?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../chapter8/section2.html">
+            
+                <a href="../chapter8/section2.html">
+            
+                    
+                    Looking Backward: Stream and Table Biases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../chapter8/section3.html">
+            
+                <a href="../chapter8/section3.html">
+            
+                    
+                    Looking Forward: Toward Robust Streaming SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../chapter8/section4.html">
+            
+                <a href="../chapter8/section4.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Chapter 9. Streaming Joins
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="section2.html">
+            
+                <a href="section2.html">
+            
+                    
+                    All Your Joins Are Belong to Streaming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.2" data-path="section3.html">
+            
+                <a href="section3.html">
+            
+                    
+                    Unwindowed Joins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="section4.html">
+            
+                <a href="section4.html">
+            
+                    
+                    Windowed Joins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="section5.html">
+            
+                <a href="section5.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../chapter10/">
+            
+                <a href="../chapter10/">
+            
+                    
+                    Chapter 10. The Evolution of Large-Scale Data Processing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../chapter10/section1.html">
+            
+                <a href="../chapter10/section1.html">
+            
+                    
+                    MapReduce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../chapter10/section2.html">
+            
+                <a href="../chapter10/section2.html">
+            
+                    
+                    Hadoop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../chapter10/section3.html">
+            
+                <a href="../chapter10/section3.html">
+            
+                    
+                    Flume
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../chapter10/section4.html">
+            
+                <a href="../chapter10/section4.html">
+            
+                    
+                    Storm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../chapter10/section5.html">
+            
+                <a href="../chapter10/section5.html">
+            
+                    
+                    Spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../chapter10/section6.html">
+            
+                <a href="../chapter10/section6.html">
+            
+                    
+                    MillWheel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../chapter10/section7.html">
+            
+                <a href="../chapter10/section7.html">
+            
+                    
+                    Kafaka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../chapter10/section8.html">
+            
+                <a href="../chapter10/section8.html">
+            
+                    
+                    CloudDataFlow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../chapter10/section9.html">
+            
+                <a href="../chapter10/section9.html">
+            
+                    
+                    Flink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="../chapter10/section9.html">
+            
+                <a href="../chapter10/section9.html">
+            
+                    
+                    Beam
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="../chapter10/section10.html">
+            
+                <a href="../chapter10/section10.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Unwindowed Joins</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="unwindowed-joins">Unwindowed Joins</h2>
+<p>It&#x2019;s a popular myth that streaming joins over unbounded data always require
+windowing. But by applying the concepts we learned in Chapter 6, we can
+see that&#x2019;s simply not true. Joins (both windowed and unwindowed) are
+simply another type of grouping operation, and grouping operations yield
+tables. Thus, if we want to consume the table created by an unwindowed join
+(or, equivalently, joins within a single global window covering all of time) as
+a stream, we need only apply an ungrouping (or trigger) operation that isn&#x2019;t
+of the &#x201C;wait until we&#x2019;ve seen all the input&#x201D; variety. Windowing the join into a
+nonglobal window and using a watermark trigger (i.e., a &#x201C;wait until we&#x2019;ve
+seen all the input in a finite temporal chunk of the stream&#x201D; trigger) is indeed
+one option, but so is triggering on every record (i.e., materialized view
+semantics) or periodically as processing time advances, regardless of whether
+the join is windowed or not. Because it makes the examples easy to follow,
+we assume the use of an implicit default per-record trigger in all of the
+following unwindowed join examples that observe the join results as a
+stream.</p>
+<p>Now, onto joins themselves. ANSI SQL defines five types of joins: FULL
+OUTER, LEFT OUTER, RIGHT OUTER, INNER, and CROSS. We look at the first
+four in depth, and discuss the last only briefly in the next paragraph. We also
+touch on two other interesting, but less-often encountered (and less well
+supported, at least using standard syntax) variations: ANTI and SEMI joins.</p>
+<p>On the surface, it sounds like a lot of variations. But as you&#x2019;ll see, there&#x2019;s
+really only one type of join at the core: the FULL OUTER join. A CROSS join is</p>
+<p>just a FULL OUTER join with a vacuously true join predicate; that is, it returns
+every possible pairing of a row from the left table with a row from the right
+table. All of the other join variations simply reduce down to some logical
+1</p>
+<p>subset of the FULL OUTER join. As a result, after you understand the
+commonality between all the different join types, it becomes a lot easier to
+keep them all in your head. It also makes reasoning about them in the context
+of streaming all that much simpler.</p>
+<p>One last note here before we get started: we&#x2019;ll be primarily considering equi
+joins with at most 1:1 cardinality, by which I mean joins in which the join
+predicate is an equality statement and there is at most one matching row on
+each side of the join. This keeps the examples simple and concise. When we</p>
+<p>get to SEMI joins, we&#x2019;ll expand our example to consider joins with arbitrary
+N:M cardinality, which will let us observe the behavior of more arbitrary
+predicate joins.</p>
+<h2 id="full-outer">FULL OUTER</h2>
+<p>Because they form the conceptual foundation for each of the other variations,
+we first look at FULL OUTER joins. Outer joins embody a rather liberal and</p>
+<p>optimistic interpretation of the word &#x201C;join&#x201D;: the result of FULL OUTER&#x2013;joining
+two datasets is essentially the full list of rows in both datasets, with rows in
+the two datasets that share the same join key combined together, but
+unmatched rows for either side included unjoined.</p>
+<p>For example, if we FULL OUTER&#x2013;join our two example datasets into a new
+relation containing only the joined IDs, the result would look something like
+this:</p>
+<pre><code>12:10&gt; SELECT TABLE
+Left.Id as L,
+Right.Id as R,
+FROM Left FULL OUTER JOIN Right
+ON L.Num = R.Num;
+---------------
+| L | R |
+---------------
+| L1 | null |
+| L2 | R2 |
+| L3 | R3 |
+</code></pre><pre><code>1
+</code></pre><pre><code>2
+</code></pre><pre><code>| null | R4 |
+---------------
+</code></pre><p>We can see that the FULL OUTER join includes both rows that satisfied the
+join predicate (e.g., &#x201C;L2, R2&#x201D; and &#x201C;L3, R3&#x201D;), but it also includes partial rows</p>
+<p>that failed the predicate (e.g., &#x201C;L1, null&#x201D; and &#x201C;null, R4&#x201D;, where the null is
+signaling the unjoined portion of the data).</p>
+<p>Of course, that&#x2019;s just a point-in-time snapshot of this FULL OUTER&#x2013;join
+relation, taken after all of the data have arrived in the system. We&#x2019;re here to
+learn about streaming joins, and streaming joins by definition involve the
+added dimension of time. As we know from Chapter 8, if we want to
+understand how a given dataset/relation changes over time, we want to speak
+in terms of time-varying relations (TVRs). So to best understand how the join
+evolves over time, let&#x2019;s look now at the full TVR for this join (with changes
+between each snapshot relation highlighted in yellow):</p>
+<pre><code>12:10&gt; SELECT TVR
+Left.Id as L,
+Right.Id as R,
+FROM Left FULL OUTER JOIN Right
+ON L.Num = R.Num;
+-----------------------------------------------------------------------
+--
+| [-inf, 12:01) | [12:01, 12:02) | [12:02, 12:03) | [12:03, 12:04)
+|
+| --------------- | --------------- | --------------- | ---------------
+|
+| | L | R | | | L | R | | | L | R | | | L | R |
+|
+| --------------- | --------------- | --------------- | ---------------
+|
+| --------------- | | null | R2 | | | L1 | null | | | L1 | null |
+|
+| | --------------- | | null | R2 | | | null | R2 |
+|
+| | | --------------- | | L3 | null |
+|
+| | | | ---------------
+</code></pre><pre><code>|
+-----------------------------------------------------------------------
+--
+| [12:04, 12:05) | [12:05, 12:06) | [12:06, 12:07) |
+| --------------- | --------------- | --------------- |
+| | L | R | | | L | R | | | L | R | |
+| --------------- | --------------- | --------------- |
+| | L1 | null | | | L1 | null | | | L1 | null | |
+| | null | L2 | | | null | L2 | | | L2 | L2 | |
+| | L3 | L3 | | | L3 | L3 | | | L3 | L3 | |
+| --------------- | | null | L4 | | | null | L4 | |
+| | --------------- | --------------- |
+-------------------------------------------------------
+</code></pre><p>And, as you might then expect, the stream rendering of this TVR would
+capture the specific deltas between each of those snapshots:</p>
+<pre><code>12:00&gt; SELECT STREAM
+Left.Id as L,
+Right.Id as R,
+CURRENT_TIMESTAMP as Time,
+Sys.Undo as Undo
+FROM Left FULL OUTER JOIN Right
+ON L.Num = R.Num;
+------------------------------
+| L | R | Time | Undo |
+------------------------------
+| null | R2 | 12:01 | |
+| L1 | null | 12:02 | |
+| L3 | null | 12:03 | |
+| L3 | null | 12:04 | undo |
+| L3 | R3 | 12:04 | |
+| null | R4 | 12:05 | |
+| null | R2 | 12:06 | undo |
+| L2 | R2 | 12:06 | |
+....... [12:00, 12:10] .......
+</code></pre><p>Note the inclusion of the Time and Undo columns, to highlight the times when
+given rows materialize in the stream, and also call out instances when an
+update to a given row first results in a retraction of the previous version of</p>
+<p>that row. The undo/retraction rows are critical if this stream is to capture a
+full-fidelity view of the TVR over time.</p>
+<p>So, although each of these three renderings of the join (table, TVR, stream)
+are distinct from one another, it&#x2019;s also pretty clear how they&#x2019;re all just
+different views on the same data: the table snapshot shows us the overall
+dataset as it exists after all the data have arrived, and the TVR and stream
+versions capture (in their own ways) the evolution of the entire relation over
+the course of its existence.</p>
+<p>With that basic familiarity of FULL OUTER joins in place, we now understand
+all of the core concepts of joins in a streaming context. No windowing
+needed, no custom triggers, nothing particularly painful or unintuitive. Just a
+per-record evolution of the join over time, as you would expect. Even better,
+all of the other types of joins are just variations on this theme (conceptually,
+at least), essentially just an additional filtering operation performed on the</p>
+<p>per-record stream of the FULL OUTER join. Let&#x2019;s now look at each of them in
+more detail.</p>
+<h2 id="left-outer">LEFT OUTER</h2>
+<p>LEFT OUTER joins are a just a FULL OUTER join with any unjoined rows from
+the right dataset removed. This is most clearly seen by taking the original
+FULL OUTER join and graying out the rows that would be filtered. For a LEFT
+OUTER join, that would look like the following, where every row with an
+unjoined left side is filtered out of the original FULL OUTER join:</p>
+<pre><code>12:00&gt; SELECT
+STREAM Left.Id as L,
+12:10&gt; SELECT TABLE Right.Id
+as R,
+Left.Id as L,
+Sys.EmitTime as Time,
+Right.Id as R Sys.Undo
+as Undo
+FROM Left LEFT OUTER JOIN Right FROM Left
+</code></pre><pre><code>LEFT OUTER JOIN Right
+ON L.Num = R.Num; ON L.Num =
+R.Num;
+--------------- ------------------------------
+| L | R | | L | R | Time | Undo |
+--------------- ------------------------------
+| L1 | null | | null | R2 | 12:01 | |
+| L2 | R2 | | L1 | null | 12:02 | |
+| L3 | R3 | | L3 | null | 12:03 | |
+| null | R4 | | L3 | null | 12:04 | undo |
+--------------- | L3 | R3 | 12:04 | |
+| null | R4 | 12:05 | |
+| null | R2 | 12:06 | undo |
+| L2 | R2 | 12:06 | |
+....... [12:00, 12:10] .......
+</code></pre><p>To see what the table and stream would actually look like in practice, let&#x2019;s
+look at the same queries again, but this time with the grayed-out rows omitted
+entirely:</p>
+<pre><code>12:00&gt; SELECT
+STREAM Left.Id as L,
+12:10&gt; SELECT TABLE Right.Id
+as R,
+Left.Id as L,
+Sys.EmitTime as Time,
+Right.Id as R Sys.Undo
+as Undo
+FROM Left LEFT OUTER JOIN Right FROM Left
+LEFT OUTER JOIN Right
+ON L.Num = R.Num; ON L.Num =
+R.Num;
+--------------- ------------------------------
+| L | R | | L | R | Time | Undo |
+--------------- ------------------------------
+| L1 | null | | L1 | null | 12:02 | |
+| L2 | R2 | | L3 | null | 12:03 | |
+| L3 | R3 | | L3 | null | 12:04 | undo |
+--------------- | L3 | R3 | 12:04 | |
+| L2 | R2 | 12:06 | |
+</code></pre><pre><code>....... [12:00, 12:10] .......
+</code></pre><h2 id="right-outer">RIGHT OUTER</h2>
+<p>RIGHT OUTER joins are the converse of a left join: all unjoined rows from the
+left dataset in the full outer join are right out, <em>cough</em>, removed:</p>
+<pre><code>12:00&gt; SELECT
+STREAM Left.Id as L,
+12:10&gt; SELECT TABLE Right.Id
+as R,
+Left.Id as L,
+Sys.EmitTime as Time,
+Right.Id as R Sys.Undo
+as Undo
+FROM Left RIGHT OUTER JOIN Right FROM Left
+RIGHT OUTER JOIN Right
+ON L.Num = R.Num; ON L.Num =
+R.Num;
+--------------- ------------------------------
+| L | R | | L | R | Time | Undo |
+--------------- ------------------------------
+| L1 | null | | null | R2 | 12:01 | |
+| L2 | R2 | | L1 | null | 12:02 | |
+| L3 | R3 | | L3 | null | 12:03 | |
+| null | R4 | | L3 | null | 12:04 | undo |
+--------------- | L3 | R3 | 12:04 | |
+| null | R4 | 12:05 | |
+| null | R2 | 12:06 | undo |
+| L2 | R2 | 12:06 | |
+....... [12:00, 12:10] .......
+</code></pre><p>And here we see how the queries rendered as the actual RIGHT OUTER join
+would appear:</p>
+<pre><code>12:00&gt; SELECT
+STREAM Left.Id as L,
+12:10&gt; SELECT TABLE Right.Id
+as R,
+</code></pre><pre><code>Left.Id as L,
+Sys.EmitTime as Time,
+Right.Id as R Sys.Undo
+as Undo
+FROM Left RIGHT OUTER JOIN Right FROM Left
+RIGHT OUTER JOIN Right
+ON L.Num = R.Num; ON L.Num =
+R.Num;
+--------------- ------------------------------
+| L | R | | L | R | Time | Undo |
+--------------- ------------------------------
+| L2 | R2 | | null | R2 | 12:01 | |
+| L3 | R3 | | L3 | R3 | 12:04 | |
+| null | R4 | | null | R4 | 12:05 | |
+--------------- | null | R2 | 12:06 | undo |
+| L2 | R2 | 12:06 | |
+....... [12:00, 12:10] .......
+</code></pre><h2 id="inner">INNER</h2>
+<p>INNER joins are essentially the intersection of the LEFT OUTER and RIGHT
+OUTER joins. Or, to think of it subtractively, the rows removed from the
+original FULL OUTER join to create an INNER join are the union of the rows</p>
+<p>removed from the LEFT OUTER and RIGHT OUTER joins. As a result, all rows
+that remain unjoined on either side are absent from the INNER join:</p>
+<pre><code>12:00&gt; SELECT
+STREAM Left.Id as L,
+12:10&gt; SELECT TABLE Right.Id
+as R,
+Left.Id as L,
+Sys.EmitTime as Time,
+Right.Id as R Sys.Undo
+as Undo
+FROM Left INNER JOIN Right FROM Left
+INNER JOIN Right
+ON L.Num = R.Num; ON L.Num =
+R.Num;
+--------------- ------------------------------
+</code></pre><pre><code>| L | R | | L | R | Time | Undo |
+--------------- ------------------------------
+| L1 | null | | null | R2 | 12:01 | |
+| L2 | R2 | | L1 | null | 12:02 | |
+| L3 | R3 | | L3 | null | 12:03 | |
+| null | R4 | | L3 | null | 12:04 | undo |
+--------------- | L3 | R3 | 12:04 | |
+| null | R4 | 12:05 | |
+| null | R2 | 12:06 | undo |
+| L2 | R2 | 12:06 | |
+....... [12:00, 12:10] .......
+</code></pre><p>And again, more succinctly rendered as the INNER join would look in reality:</p>
+<pre><code>12:00&gt; SELECT
+STREAM Left.Id as L,
+12:10&gt; SELECT TABLE Right.Id
+as R,
+Left.Id as L,
+Sys.EmitTime as Time,
+Right.Id as R Sys.Undo
+as Undo
+FROM Left INNER JOIN Right FROM Left
+INNER JOIN Right
+ON L.Num = R.Num; ON L.Num =
+R.Num;
+--------------- ------------------------------
+| L | R | | L | R | Time | Undo |
+--------------- ------------------------------
+| L2 | R2 | | L3 | R3 | 12:04 | |
+| L3 | R3 | | L2 | R2 | 12:06 | |
+--------------- ....... [12:00, 12:10] .......
+</code></pre><p>Given this example, you might be inclined to think retractions never play a
+part in INNER join streams because they were all filtered out in this example.
+But imagine if the value in the Left table for the row with a Num of 3 were</p>
+<p>updated from &#x201C;L3&#x201D; to &#x201C;L3v2&#x201D; at 12:07. In addition to resulting in a different
+value on the left side for our final TABLE query (again performed at 12:10,
+which is after the update to row 3 on the Left arrived), it would also result in</p>
+<p>a STREAM that captures both the removal of the old value via a retraction and
+the addition of the new value:</p>
+<pre><code>12:00&gt; SELECT
+STREAM Left.Id as L,
+12:10&gt; SELECT TABLE Right.Id
+as R,
+Left.Id as L,
+Sys.EmitTime as Time,
+Right.Id as R Sys.Undo
+as Undo
+FROM LeftV2 INNER JOIN Right FROM LeftV2
+INNER JOIN Right
+ON L.Num = R.Num; ON L.Num =
+R.Num;
+--------------- -----------------------------
+</code></pre><p>-
+| L | R | | L | R | Time | Undo
+|</p>
+<hr>
+<p>-
+| L2 | R2 | | L3 | R3 | 12:04 |
+|
+| L3v2 | R3 | | L2 | R2 | 12:06 |
+|
+--------------- | L3 | R3 | 12:07 | undo
+|
+| L3v2 | R3 | 12:07 |
+|
+....... [12:00, 12:10]
+.......</p>
+<h2 id="anti">ANTI</h2>
+<p>ANTI joins are the obverse of the INNER join: they contain all of the <em>unjoined</em>
+rows. Not all SQL systems support a clean ANTI join syntax, but I&#x2019;ll use the
+most straightforward one here for clarity:</p>
+<pre><code>12:00&gt; SELECT
+</code></pre><pre><code>STREAM Left.Id as L,
+12:10&gt; SELECT TABLE Right.Id
+as R,
+Left.Id as L,
+Sys.EmitTime as Time,
+Right.Id as R Sys.Undo
+as Undo
+FROM Left ANTI JOIN Right FROM Left
+ANTI JOIN Right
+ON L.Num = R.Num; ON L.Num =
+R.Num;
+--------------- ------------------------------
+</code></pre><p>-
+| L | R | | L | R | Time | Undo |</p>
+<hr>
+<p>| L1 | null | | null | R2 | 12:01 | |
+| L2 | R2 | | L1 | null | 12:02 | |
+| L3 | R3 | | L3 | null | 12:03 | |
+| null | R4 | | L3 | null | 12:04 | undo |
+--------------- | L3 | R3 | 12:04 | |
+| null | R4 | 12:05 | |
+| null | R2 | 12:06 | undo |
+| L2 | R2 | 12:06 | |
+....... [12:00, 12:10] .......</p>
+<p>What&#x2019;s slightly interesting about the stream rendering of the ANTI join is that
+it ends up containing a bunch of false-starts and retractions for rows which</p>
+<p>eventually do end up joining; in fact, the ANTI join is as heavy on retractions
+as the INNER join is light. The more concise versions would look like this:</p>
+<pre><code>12:00&gt; SELECT
+STREAM Left.Id as L,
+12:10&gt; SELECT TABLE Right.Id
+as R,
+Left.Id as L,
+Sys.EmitTime as Time,
+Right.Id as R Sys.Undo
+as Undo
+FROM Left ANTI JOIN Right FROM Left
+</code></pre><pre><code>ANTI JOIN Right
+ON L.Num = R.Num; ON L.Num =
+R.Num;
+--------------- ------------------------------
+| L | R | | L | R | Time | Undo |
+--------------- ------------------------------
+| L1 | null | | null | R2 | 12:01 | |
+| null | R4 | | L1 | null | 12:02 | |
+--------------- | L3 | null | 12:03 | |
+| L3 | null | 12:04 | undo |
+| null | R4 | 12:05 | |
+| null | R2 | 12:06 | undo |
+....... [12:00, 12:10] .......
+</code></pre><h2 id="semi">SEMI</h2>
+<p>We now come to SEMI joins, and SEMI joins are kind of weird. At first
+glance, they basically look like inner joins with one side of the joined values
+being dropped. And, indeed, in cases for which the cardinality relationship of</p>
+<p><side-being-kept>:<side-being-dropped> is N:M with M &#x2264; 1, this
+works (note that we&#x2019;ll be using kept=Left, dropped=Right for all the
+examples that follow). For example, on the Left and Right datasets we&#x2019;ve
+used so far (which had cardinalities of 0:1, 1:0, and 1:1 for the joined data),
+the INNER and SEMI join variations look identical:</side-being-dropped></side-being-kept></p>
+<pre><code>12:10&gt; SELECT TABLE 12:10&gt; SELECT TABLE
+Left.Id as L Left.Id as L
+FROM Left INNER JOIN FROM Left SEMI JOIN
+Right ON L.Num = R.Num; Right ON L.Num = R.Num;
+--------------- ---------------
+| L | R | | L | R |
+--------------- ---------------
+| L1 | null | | L1 | null |
+| L2 | R2 | | L2 | R2 |
+| L3 | R3 | | L3 | R3 |
+| null | R4 | | null | R4 |
+--------------- ---------------
+</code></pre><p>However, there&#x2019;s an additional subtlety to SEMI joins in the case of N:M
+cardinality with M &gt; 1: because the <em>values</em> on the M side are not being</p>
+<p>returned, the SEMI join simply predicates the join condition on there being
+<em>any</em> matching row on the right, rather than repeatedly yielding a new result
+for <em>every</em> matching row.</p>
+<p>To see this clearly, let&#x2019;s switch to a slightly more complicated pair of input
+relations that highlight the N:M join cardinality of the rows contained therein.
+In these relations, the N_M column states what the cardinality relationship of</p>
+<p>rows is between the left and right sides, and the Id column (as before)
+provides an identifier that is unique for each row in each of the input
+relations:</p>
+<pre><code>12:15&gt; SELECT TABLE * FROM LeftNM; 12:15&gt; SELECT TABLE *
+FROM RightNM;
+--------------------- ---------------------
+| N_M | Id | Time | | N_M | Id | Time |
+--------------------- ---------------------
+| 1:0 | L2 | 12:07 | | 0:1 | R1 | 12:02 |
+| 1:1 | L3 | 12:01 | | 1:1 | R3 | 12:14 |
+| 1:2 | L4 | 12:05 | | 1:2 | R4A | 12:03 |
+| 2:1 | L5A | 12:09 | | 1:2 | R4B | 12:04 |
+| 2:1 | L5B | 12:08 | | 2:1 | R5 | 12:06 |
+| 2:2 | L6A | 12:12 | | 2:2 | R6A | 12:11 |
+| 2:2 | L6B | 12:10 | | 2:2 | R6B | 12:13 |
+--------------------- ---------------------
+</code></pre><p>With these inputs, the FULL OUTER join expands to look like these:</p>
+<pre><code>12:00&gt; SELECT STREAM
+</code></pre><pre><code>COALESCE(LeftNM.N_M,
+12:15&gt; SELECT TABLE
+RightNM.N_M) as N_M,
+COALESCE(LeftNM.N_M, LeftNM.Id
+as L,
+RightNM.N_M) as N_M,
+RightNM.Id as R,
+</code></pre><p><strong><em>LeftNM.Id as L,
+Sys.EmitTime as Time,
+RightNM.Id as R, Sys.Undo
+as Undo
+FROM LeftNM FROM LeftNM
+FULL OUTER JOIN RightNM FULL OUTER
+JOIN RightNM
+ON LeftNM.N_M = RightNM.N_M; ON
+LeftNM.N_M = RightNM.N_M;</em></strong></p>
+<h2 id="-----------------------------------------------------">--------------------- --------------------------------</h2>
+<p>| N_M | L | R | | N_M | L | R | Time |
+Undo |</p>
+<h2 id="-----------------------------------------------------">--------------------- --------------------------------</h2>
+<p>| 0:1 | null | R1 | | 1:1 | L3 | null | 12:01 |
+|
+| 1:0 | L2 | null | | 0:1 | null | R1 | 12:02 |
+|
+| 1:1 | L3 | R3 | | 1:2 | null | R4A | 12:03 |
+|
+| 1:2 | L4 | R4A | | 1:2 | null | R4B | 12:04 |
+|
+| 1:2 | L4 | R4B | | 1:2 | null | R4A | 12:05 |
+undo |
+| 2:1 | L5A | R5 | | 1:2 | null | R4B | 12:05 |
+undo |
+| 2:1 | L5B | R5 | | 1:2 | L4 | R4A | 12:05 |
+|
+| 2:2 | L6A | R6A | | 1:2 | L4 | R4B | 12:05 |
+|
+| 2:2 | L6A | R6B | | 2:1 | null | R5 | 12:06 |
+|
+| 2:2 | L6B | R6A | | 1:0 | L2 | null | 12:07 |
+|
+| 2:2 | L6B | R6B | | 2:1 | null | R5 | 12:08 |
+undo |
+--------------------- | 2:1 | L5B | R5 | 12:08 |
+|
+| 2:1 | L5A | R5 | 12:09 |
+|
+| 2:2 | L6B | null | 12:10 |</p>
+<pre><code>|
+| 2:2 | L6B | null | 12:11 |
+undo |
+| 2:2 | L6B | R6A | 12:11 |
+|
+| 2:2 | L6A | R6A | 12:12 |
+|
+| 2:2 | L6A | R6B | 12:13 |
+|
+| 2:2 | L6B | R6B | 12:13 |
+|
+| 1:1 | L3 | null | 12:14 |
+undo |
+| 1:1 | L3 | R3 | 12:14 |
+|
+.......... [12:00, 12:15]
+..........
+</code></pre><p>As a side note, one additional benefit of these more complicated datasets is
+that the multiplicative nature of joins when there are multiple rows on each
+side matching the same predicate begins to become more clear (e.g., the &#x201C;2:2&#x201D;
+rows, which expand from two rows in each the inputs to four rows in the
+output; if the dataset had a set of &#x201C;3:3&#x201D; rows, they&#x2019;d expand from three rows
+in each of the inputs to nine rows in the output, and so on).</p>
+<p>But back to the subtleties of SEMI joins. With these datasets, it becomes much
+clearer what the difference between the filtered INNER join and the SEMI join</p>
+<p>is: the INNER join yields duplicate values for any of the rows where the N:M
+cardinality has M &gt; 1, whereas the SEMI join doesn&#x2019;t (note that I&#x2019;ve
+highlighted the duplicate rows in the INNER join version in red, and included
+in gray the portions of the full outer join that are omitted in the respective
+INNER and SEMI versions):</p>
+<pre><code>12:15&gt; SELECT TABLE 12:15&gt; SELECT
+TABLE
+COALESCE(LeftNM.N_M,
+COALESCE(LeftNM.N_M,
+RightNM.N_M) as N_M,
+</code></pre><pre><code>RightNM.N_M) as N_M,
+LeftNM.Id as L
+LeftNM.Id as L
+FROM LeftNM INNER JOIN RightNM FROM
+LeftNM SEMI JOIN RightNM
+ON LeftNM.N_M = RightNM.N_M; ON
+LeftNM.N_M = RightNM.N_M;
+--------------------- ---------------------
+| N_M | L | R | | N_M | L | R |
+--------------------- ---------------------
+| 0:1 | null | R1 | | 0:1 | null | R1 |
+| 1:0 | L2 | null | | 1:0 | L2 | null |
+| 1:1 | L3 | R3 | | 1:1 | L3 | R3 |
+| 1:2 | L4 | R5A | | 1:2 | L4 | R5A |
+| 1:2 | L4 | R5B | | 1:2 | L4 | R5B |
+| 2:1 | L5A | R5 | | 2:1 | L5A | R5 |
+| 2:1 | L5B | R5 | | 2:1 | L5B | R5 |
+| 2:2 | L6A | R6A | | 2:2 | L6A | R6A |
+| 2:2 | L6A | R6B | | 2:2 | L6A | R6B |
+| 2:2 | L6B | R6A | | 2:2 | L6B | R6A |
+| 2:2 | L6B | R6B | | 2:2 | L6B | R6B |
+--------------------- ---------------------
+</code></pre><p>Or, rendered more succinctly:</p>
+<pre><code>12:15&gt; SELECT TABLE 12:15&gt; SELECT
+TABLE
+COALESCE(LeftNM.N_M,
+COALESCE(LeftNM.N_M,
+RightNM.N_M) as N_M,
+RightNM.N_M) as N_M,
+LeftNM.Id as L
+LeftNM.Id as L
+FROM LeftNM INNER JOIN RightNM FROM
+LeftNM SEMI JOIN RightNM
+ON LeftNM.N_M = RightNM.N_M; ON
+LeftNM.N_M = RightNM.N_M;
+------------- -------------
+| N_M | L | | N_M | L |
+------------- -------------
+</code></pre><pre><code>| 1:1 | L3 | | 1:1 | L3 |
+| 1:2 | L4 | | 1:2 | L4 |
+| 1:2 | L4 | | 2:1 | L5A |
+| 2:1 | L5A | | 2:1 | L5B |
+| 2:1 | L5B | | 2:2 | L6A |
+| 2:2 | L6A | | 2:2 | L6B |
+| 2:2 | L6A | -------------
+| 2:2 | L6B |
+| 2:2 | L6B |
+-------------
+</code></pre><p>The STREAM renderings then provide a bit of context as to which rows are
+filtered out&#x2014;they are simply the later-arriving duplicate rows (from the
+perspective of the columns being projected):</p>
+<pre><code>12:00&gt; SELECT STREAM 12:00&gt; SELECT
+STREAM
+COALESCE(LeftNM.N_M,
+COALESCE(LeftNM.N_M,
+RightNM.N_M) as N_M,
+RightNM.N_M) as N_M,
+LeftNM.Id as L
+LeftNM.Id as L
+Sys.EmitTime as Time,
+Sys.EmitTime as Time,
+Sys.Undo as Undo,
+Sys.Undo as Undo,
+FROM LeftNM INNER JOIN RightNM FROM
+LeftNM SEMI JOIN RightNM
+ON LeftNM.N_M = RightNM.N_M; ON
+LeftNM.N_M = RightNM.N_M;
+------------------------------------ ---------------------------
+---------
+| N_M | L | R | Time | Undo | | N_M | L | R | Time
+| Undo |
+------------------------------------ ---------------------------
+---------
+| 1:1 | L3 | null | 12:01 | | | 1:1 | L3 | null | 12:01
+| |
+| 0:1 | null | R1 | 12:02 | | | 0:1 | null | R1 | 12:02
+</code></pre><p>| |
+| 1:2 | null | R4A | 12:03 | | | 1:2 | null | R4A | 12:03
+| |
+| 1:2 | null | R4B | 12:04 | | | 1:2 | null | R4B | 12:04
+| |
+| 1:2 | null | R4A | 12:05 | undo | | 1:2 | null | R4A | 12:05
+| undo |
+| 1:2 | null | R4B | 12:05 | undo | | 1:2 | null | R4B | 12:05
+| undo |
+| 1:2 | L4 | R4A | 12:05 | | | 1:2 | L4 | R4A | 12:05
+| |
+| 1:2 | L4 | R4B | 12:05 | | | 1:2 | L4 | R4B | 12:05
+| |
+| 2:1 | null | R5 | 12:06 | | | 2:1 | null | R5 | 12:06
+| |
+| 1:0 | L2 | null | 12:07 | | | 1:0 | L2 | null | 12:07
+| |
+| 2:1 | null | R5 | 12:08 | undo | | 2:1 | null | R5 | 12:08
+| undo |
+| 2:1 | L5B | R5 | 12:08 | | | 2:1 | L5B | R5 | 12:08
+| |
+| 2:1 | L5A | R5 | 12:09 | | | 2:1 | L5A | R5 | 12:09
+| |
+| 2:2 | L6B | null | 12:10 | | | 2:2 | L6B | null | 12:10
+| |
+| 2:2 | L6B | null | 12:10 | undo | | 2:2 | L6B | null | 12:10
+| undo |
+| 2:2 | L6B | R6A | 12:11 | | | 2:2 | L6B | R6A | 12:11
+| |
+| 2:2 | L6A | R6A | 12:12 | | | 2:2 | L6A | R6A | 12:12
+| |
+| 2:2 | L6A | R6B | 12:13 | | | 2:2 | L6A | R6B | 12:13
+| |
+| 2:2 | L6B | R6B | 12:13 | | | 2:2 | L6B | R6B | 12:13
+| |
+| 1:1 | L3 | null | 12:14 | undo | | 1:1 | L3 | null | 12:14
+| undo |
+| 1:1 | L3 | R3 | 12:14 | | | 1:1 | L3 | R3 | 12:14
+| |
+.......... [12:00, 12:15] .......... .......... [12:00, 12:15]
+..........</p>
+<p>And again, rendered succinctly:</p>
+<pre><code>12:00&gt; SELECT STREAM 12:00&gt; SELECT
+STREAM
+COALESCE(LeftNM.N_M,
+COALESCE(LeftNM.N_M,
+RightNM.N_M) as N_M,
+RightNM.N_M) as N_M,
+LeftNM.Id as L
+LeftNM.Id as L
+Sys.EmitTime as Time,
+Sys.EmitTime as Time,
+Sys.Undo as Undo,
+Sys.Undo as Undo,
+FROM LeftNM INNER JOIN RightNM FROM
+LeftNM SEMI JOIN RightNM
+ON LeftNM.N_M = RightNM.N_M; ON
+LeftNM.N_M = RightNM.N_M;
+---------------------------- ---------------------------
+</code></pre><p>-
+| N_M | L | Time | Undo | | N_M | L | Time | Undo
+|</p>
+<hr>
+<p>-
+| 1:2 | L4 | 12:05 | | | 1:2 | L4 | 12:05 |
+|
+| 1:2 | L4 | 12:05 | | | 2:1 | L5B | 12:08 |
+|
+| 2:1 | L5B | 12:08 | | | 2:1 | L5A | 12:09 |
+|
+| 2:1 | L5A | 12:09 | | | 2:2 | L6B | 12:11 |
+|
+| 2:2 | L6B | 12:11 | | | 2:2 | L6A | 12:12 |
+|
+| 2:2 | L6A | 12:12 | | | 1:1 | L3 | 12:14 |
+|
+| 2:2 | L6A | 12:13 | | ...... [12:00, 12:15]
+......
+| 2:2 | L6B | 12:13 | |
+| 1:1 | L3 | 12:14 | |
+...... [12:00, 12:15] ......</p>
+<p>As we&#x2019;ve seen over the course of a number of examples, there&#x2019;s really
+nothing special about streaming joins. They function exactly as we might
+expect given our knowledge of streams and tables, with join streams
+capturing the history of the join over time as it evolves. This is in contrast to
+join tables, which simply capture a snapshot of the entire join as it exists at a
+specific point in time, as we&#x2019;re perhaps more accustomed.</p>
+<p>But, even more important, viewing joins through the lens of stream-table
+theory has lent some additional clarity. The core underlying join primitive is
+the FULL OUTER join, which is a stream &#x2192; table grouping operation that
+collects together all the joined and unjoined rows in a relation. All of the
+other variants we looked at in detail (LEFT OUTER, RIGHT OUTER, INNER,
+ANTI, and SEMI) simply add an additional layer of filtering on the joined</p>
+<p>stream following the FULL OUTER join.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="section2.html" class="navigation navigation-prev " aria-label="Previous page: All Your Joins Are Belong to Streaming">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="section4.html" class="navigation navigation-next " aria-label="Next page: Windowed Joins">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Unwindowed Joins","level":"1.11.2","depth":2,"next":{"title":"Windowed Joins","level":"1.11.3","depth":2,"path":"chapter9/section4.md","ref":"chapter9/section4.md","articles":[]},"previous":{"title":"All Your Joins Are Belong to Streaming","level":"1.11.1","depth":2,"path":"chapter9/section2.md","ref":"chapter9/section2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter9/section3.md","mtime":"2019-10-27T13:25:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-03T07:23:23.538Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
